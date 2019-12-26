@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Ezra Marks</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/work.css">
+</head>
+
+<body>
+    <div class="page-container">
+      <div class="header">
+          <a href="index.html" class="logo">Ezra Marks</a>
+          <div class="header-right">
+            <a class="active" href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+          </div>
+      </div>
+      <div class="blurb-container">
+        <h3>Hi! I’m Ezra, a UI/UX student exploring user-focused design.</h3>
+        <p>Student at Brown University,</p>
+        <p>Studying Computer Science and Cognitive Science</p>
+      </div>
+      <div class="portfolio-container">
+        <!-- TODO: make background image / gif here and see what happens -->
+        <div class="portfolio-item"
+        id="rhythm-witch">
+          <a href="portfolio/rhythm-witch.html">
+            <div class="aspect-ratio-box">
+              <div class="hover-text">
+                <h2>Rhythm Witch</h2>
+                <h3>2D Music Game | Programming</h3>
+              </div>
+              <video class="hover-graphic"
+              autoplay muted loop>
+                <source src="images/rhythm-witch-preview.mp4"
+                type="video/mp4"/>
+              </video>
+            </div>
+          </a>
+        </div>
+        <div class="portfolio-item"
+        id="tea-shop">
+          <a href="portfolio/tea-shop.html">
+            <div class="aspect-ratio-box">
+              <div class="hover-text">
+                <h2>The Tea Shop</h2>
+                <h3>Interactive Online Store | React Web Development</h3>
+              </div>
+              <div class="hover-graphic">
+                
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="portfolio-item"
+        id="node-interface">
+          <a href="portfolio/node-interface.html">
+            <div class="aspect-ratio-box">
+              <div class="hover-text">
+                <h2>Node Backyard Cottages</h2>
+                <h3>Web Design Concept | UI/UX</h3>
+              </div>
+              <div class="hover-graphic">
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="portfolio-item"
+        id="personas-storyboarding">
+          <a href="portfolio/personas-storyboarding.html">
+            <div class="aspect-ratio-box">
+              <div class="hover-text">
+                  <h2>Dining Hall Exit Interface</h2>
+                  <h3>Identifying Target User Groups | Personas and Storyboarding</h3>
+                </div>
+                <div class="hover-graphic">
+                  
+                </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  <!-- fixes Chrome bug where CSS transitions fire on page load -->
+  <script> </script>
+</body>
+</html>
