@@ -1,10 +1,36 @@
 /* Style the header with a grey background and some padding */
 .header {
     margin: 0 auto;
-    overflow: hidden;
-    padding: 10px 0px;
-    /* background-color: lightblue; */
+    padding-top: 8px;
+    padding-bottom: 0px;
+    background-color: white;
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: inherit; /* Full width */
+    max-width: inherit; /* Full width */
+    /* box-shadow: 0 0 30px #333; */
+    z-index: 9999999999;
   }
+
+.header:after{ /* define header shadow */
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  bottom: 0;
+  width: 120%;
+  height: 20px;
+  left: -10%;
+  right: -10%;
+  background: radial-gradient(ellipse at 50% -20%, rgba(00, 00, 00, 0.11), rgba(255, 255, 255, 0) 60%);
+  opacity: 0;
+  transition-duration: 0.2s;
+}
+
+.header-shadow.header:after{ /* fade in header shadow */
+  opacity: 1;
+  transition-duration: 0.3s;
+}
   
   /* Style the header links */
   .header a {
