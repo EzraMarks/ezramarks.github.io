@@ -8,7 +8,6 @@
     top: 0; /* Position the navbar at the top of the page */
     width: inherit; /* Full width */
     max-width: inherit; /* Full width */
-    /* box-shadow: 0 0 30px #333; */
     z-index: 9999999999;
     box-shadow: -200px 0px 0px 0px white, 200px 0px 0px 0px white;
   }
@@ -23,7 +22,7 @@
   height: 20px;
   left: -10%;
   right: -10%;
-  background: radial-gradient(ellipse at 50% -20%, rgba(00, 00, 00, 0.11), rgba(255, 255, 255, 0) 60%);
+  background: radial-gradient(ellipse at 50% -20%, rgba(00, 00, 00, 0.12), rgba(255, 255, 255, 0) 60%);
   opacity: 0;
   transition-duration: 0.2s;
 }
