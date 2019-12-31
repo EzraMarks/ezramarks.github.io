@@ -1,0 +1,22 @@
+.about-container {
+    /* padding-top: 100px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-column {
+    padding: 20px;
+}
+
+/* use single-column layout for small screens */
+@media screen and (max-width:768px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about-column {
+        padding: 0px;
+        padding-bottom: 40px;
+    }
+}

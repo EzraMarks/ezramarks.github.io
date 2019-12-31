@@ -52,6 +52,9 @@
     position: relative;
     overflow: hidden;
     background-color: inherit;
+    border-radius: inherit;
+    transition-property: opacity;
+    transition-duration: 0.2s;
 }
 
 /* on hover, show the contents of the container */
@@ -59,7 +62,6 @@
     opacity: 1;
     transition-property: opacity;
     transition-duration: 0.3s;
-    border-radius: inherit;
 }
 
 /* position & style text in the on-hover preview */
@@ -130,19 +132,23 @@
 }
 
 #node-interface {
-    background-color: #2adea8;
-    background-image: url("../images/node-interface/node-icon--white.png");
-    background-size: 50%;
+    background-color: #363333;
+    background-image: url("../images/node-interface/node-logo.png");
+    background-size: 80%;
 }
 
 #node-interface a {
-    background-color: inherit;
+    background-color: black;
     color: white;
 }
 
+#node-interface .hover-graphic {
+    opacity: 0.5;
+}
+
 #personas-storyboarding {
-    background-color: pink;
-    background-image: url("../images/personas-storyboarding/ratty-preview--poster.png");
+    background-color: rgb(39, 43, 80);
+    background-image: url("../images/personas-storyboarding/ratty-preview--white-filled.png");
 }
 
 #personas-storyboarding a {
