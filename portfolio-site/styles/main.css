@@ -5,7 +5,7 @@
     width: 1200px;
     max-width: 95%;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 140px;
 }
 
 .article-container {
@@ -15,8 +15,13 @@
 }
 
 .article-container .title {
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 50px;
+}
+
+/* remove margin from top of title */
+.article-container .title h1:first-of-type {
+    margin-top: 0px;
 }
 
 .footer {

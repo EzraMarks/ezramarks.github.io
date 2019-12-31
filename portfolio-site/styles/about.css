@@ -4,12 +4,13 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.column-text {
-    padding: 20px;
+/* removes extra margin from top of column */
+.column-text h1:first-of-type {
+    margin-top: 0;
 }
 
 .column-image {
-    padding: 50px;
+    padding-left: 18%;
 }
 
 /* use single-column layout for small screens */
@@ -21,7 +22,11 @@
 
     .column-text {
         padding: 0px;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
+    }
+
+    .column-image {
+        padding: 5%;
     }
 }
 
