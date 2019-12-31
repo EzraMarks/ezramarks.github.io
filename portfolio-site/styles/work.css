@@ -111,7 +111,7 @@
 
 /* controls the off-hover appearance of the item */
 #rhythm-witch {
-    background-color: rgb(255, 224, 228);
+    background-color: #A7CCED;
     background-image: url("../images/rhythm-witch-title.gif");
 }
 
@@ -122,7 +122,7 @@
 }
 
 #tea-shop {
-    background-color: lightblue;
+    background-color: #6290C8;
     background-image: url("../images/tea-shop/tea-bag.png");
 }
 
@@ -142,12 +142,13 @@
     color: white;
 }
 
+/* controls the opacity of the on-hover image */
 #node-interface .hover-graphic {
     opacity: 0.5;
 }
 
 #personas-storyboarding {
-    background-color: rgb(39, 43, 80);
+    background-color: #4F5D75;
     background-image: url("../images/personas-storyboarding/ratty-preview--white-filled.png");
 }
 

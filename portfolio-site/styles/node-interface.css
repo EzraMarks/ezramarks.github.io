@@ -13,7 +13,7 @@
     overflow: hidden;
     padding-bottom: 80%;
     position: relative;
-    border: solid 2px black;
+    border: solid 4px black;
 }
    
 .iframe-container iframe {

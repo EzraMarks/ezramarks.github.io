@@ -31,17 +31,15 @@
           <h2>Interactive Online Store: React Web Development</h2>
         </div>
       </div>
-      <div class="iframe-container">
-        <iframe src="https://pure-lake-44188.herokuapp.com/" allowfullscreen></iframe>
-      </div>
+      <a href="https://pure-lake-44188.herokuapp.com/" target="_blank">
+        <img class="image-button" src="../images/tea-shop/tea-shop-website.jpg" alt="screenshot of tea shop website"/>
+      </a>
       <div class="article-container">
-        <p>My Tea Shop interface draws heavily on principles of user interface design discussed in class. Keeping with simplicity, I chose a single green accent color which remains consistent throughout the interface. I use just two typefaces and three different font sizes to maintain a clear visual hierarchy. I also do not shy away from white space, utilizing the empty space to separate the components of the page while avoiding visual clutter. There are many minor details on the page which I included to increase affordances. For instance, I created custom larger checkboxes which increase the ease of targeting. I also added affordances to indicate that the tea items are clickable, such as increasing the drop shadow on hover and changing the mouse pointer style. Finally, I made the page fully responsive for all screen sizes using CSS Grid.</p>
-        
-        <p>Data is passed down through my components by using the React Props. Starting in App, I maintain a State field containing a list of all the teas with their corresponding fields. This list is passed into TeaList as Props. TeaList maintains State which dictates whether a given filter category or sorting method is enabled. Each TeaItem which TeaList renders has Props which determine what to render, such as the given tea’s title, image, caffeine content, etc. Each TeaItem additionally maintains State which changes the rendering of the item depending on whether the user is hovering over it. The custom DropdownSelector additionally makes use of State and Props. TeaList passes information to DropdownSelector as Props, including a method which allows it to control the State of TeaList, changing the sorting method. In DropdownSelector, State is used to keep track of the user’s actions, such as clicking on the dropdown button or selecting an item.</p>
-
-        <p>The Tea Shop might be valuable to anyone looking to buy a new type of tea. A shopper can easily find a tea that fits their niche by filtering and sorting this compilation of high-quality options.</p>
-        
-        <p>Designing this Tea Shop primarily allowed me to explore the capabilities of React for creating an interactive website. The main interactivity is centered around seamless filtering and sorting of items, allowing a user to easily find a tea that suits their needs: filter by tea type (e.g. black or green), format (loose or bagged), or sort the collection by caffeine content. I made use of the CSS Grid Layout in making the website responsive, allowing the Tea Shop to be used on any device, desktop or mobile. I was additionally able to put into practice my knowledge of user interface and user experience design, creating a tool that incorporates many features while remaining easy to use and without visual clutter.</p>
+        </br>
+        <h2>Objective</h2>
+        <p>Designing The Tea Shop primarily allowed me to explore the capabilities of React for creating an interactive website. The main interactivity is centered around seamless filtering and sorting of items, allowing a user to easily find a tea that suits their needs: filter by tea type (e.g. black or green), format (loose or bagged), or sort the collection by caffeine content. I made use of the CSS Grid Layout in making the website responsive, allowing The Tea Shop to be used on any device, desktop or mobile. I was additionally able to put into practice my knowledge of user interface and user experience design, creating a tool that incorporates many features while remaining easy to use and without visual clutter.</p>
+        <h2>User Interface Design</h2>
+        <p>The Tea Shop interface draws heavily on core principles of user interface design. Keeping with simplicity, I chose a single green accent color which remains consistent throughout the interface. I use just two typefaces and three different font sizes to maintain a clear visual hierarchy. I also do not shy away from white space, utilizing the empty space to separate the components of the page while avoiding visual clutter. The interface includes many subtle details to increase affordances. For instance, I created custom larger checkboxes which increase the ease of targeting. I also added affordances to indicate that the tea items are clickable, such as increasing the drop shadow on hover and changing the mouse pointer style. Finally, I made the page fully responsive for all screen sizes using CSS Grid.</p>
       </div>
       <div class="footer"></div>
     </div>

@@ -10,6 +10,7 @@
     max-width: inherit; /* Full width */
     /* box-shadow: 0 0 30px #333; */
     z-index: 9999999999;
+    box-shadow: -200px 0px 0px 0px white, 200px 0px 0px 0px white;
   }
 
 .header:after{ /* define header shadow */
