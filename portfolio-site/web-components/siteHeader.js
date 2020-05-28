@@ -8,8 +8,8 @@ siteHeaderTemplate.innerHTML = `
       background-color: white;
       position: fixed;
       top: 0; /* Position the navbar at the top of the page */
-      width: 1200px;
-      max-width: 95%;
+      width: inherit;
+      max-width: inherit;
       z-index: 9999999999;
       box-shadow: -200px 0px 0px 0px white, 200px 0px 0px 0px white;
     }
@@ -75,9 +75,9 @@ siteHeaderTemplate.innerHTML = `
   <div class="header">
     <a href="index.html" class="logo">Ezra Marks</a>
     <div class="header-right">
-      <a class="active" href="index.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
+      <a class="navbar-link" href="index.html">Work</a>
+      <a class="navbar-link" href="about.html">About</a>
+      <a class="navbar-link" href="resume.html">Resume</a>
     </div>
   </div>
 `;
@@ -85,19 +85,21 @@ siteHeaderTemplate.innerHTML = `
 class SiteHeader extends HTMLElement {
   constructor() {
     super();
-      this.attachShadow({ mode: 'open' });
-      this.shadowRoot.appendChild(siteHeaderTemplate.content.cloneNode(true));
+      document.body.appendChild(siteHeaderTemplate.content.cloneNode(true));
+
+      const activePage = this.getAttribute('active-page');
+      document.body.querySelector(`[class='navbar-link'][href='${activePage}']`).classList.add('active')
   }
 
   connectedCallback() {
-    const header = this.shadowRoot.querySelector('.header');
+    const header = document.querySelector('.header');
     const sticky = header.offsetTop;
 
     window.onscroll = (event) => {
       if (window.pageYOffset > sticky + 100) {
-        header.classList.add("header-shadow");
+        header.classList.add('header-shadow');
       } else {
-        header.classList.remove("header-shadow");
+        header.classList.remove('header-shadow');
       }
     }
   }
