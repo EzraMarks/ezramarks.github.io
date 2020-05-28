@@ -85,10 +85,12 @@ siteHeaderTemplate.innerHTML = `
 class SiteHeader extends HTMLElement {
   constructor() {
     super();
-      document.body.appendChild(siteHeaderTemplate.content.cloneNode(true));
+    document.body.appendChild(siteHeaderTemplate.content.cloneNode(true));
 
-      const activePage = this.getAttribute('active-page');
+    const activePage = this.getAttribute('active-page');
+    if (activePage != null) {
       document.body.querySelector(`[class='navbar-link'][href='${activePage}']`).classList.add('active')
+    }
   }
 
   connectedCallback() {

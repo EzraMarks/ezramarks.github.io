@@ -1,0 +1,84 @@
+{
+  "portfolioDescriptions": {
+    "rhythmWitch": {
+      "title": "Rhythm Witch",
+      "subtitle": "2D Music Game | Programming",
+      "portfolioLink": "./portfolio/rhythm-witch.html",
+      "thumbnail": {
+        "img": "./images/rhythm-witch-title.gif",
+        "color": "#A7CCED"
+      },
+      "thumbnailHover": {
+        "img": null,
+        "video": "./images/rhythm-witch-preview.mp4",
+        "color": "black"
+      },
+      "project": {
+        "img": null,
+        "description": null,
+        "githubLink": null,
+        "sessionLink": null
+      }
+    },
+    "teaShop": {
+      "title": "The Tea Shop",
+      "subtitle": "Interactive Online Store | React Web Development",
+      "portfolioLink": "./portfolio/tea-shop.html",
+      "thumbnail": {
+        "img": "./images/tea-shop/tea-bag.png",
+        "color": "#6290C8"
+      },
+      "thumbnailHover": {
+        "img": null,
+        "video": null,
+        "color": null
+      },
+      "project": {
+        "img": null,
+        "description": null,
+        "githubLink": null,
+        "sessionLink": null
+      }
+    },
+    "personasStoryboarding": {
+      "title": "Dining Hall Exit Interface",
+      "subtitle": "Identifying Target User Groups | Personas and Storyboarding",
+      "portfolioLink": "./portfolio/personas-storyboarding.html",
+      "thumbnail": {
+        "img": "./images/personas-storyboarding/ratty-preview--white-filled.png",
+        "color": "#4F5D75"
+      },
+      "thumbnailHover": {
+        "img": null,
+        "video": null,
+        "color": null
+      },
+      "project": {
+        "img": null,
+        "description": null,
+        "githubLink": null,
+        "sessionLink": null
+      }
+    },
+    "nodeInterface": {
+      "title": "Node Backyard Cottages",
+      "subtitle": "Web Design Concept | UI/UX",
+      "portfolioLink": "./portfolio/node-interface.html",
+      "thumbnail": {
+        "img": "./images/node-interface/node-logo.png",
+        "color": "#363333"
+      },
+      "thumbnailHover": {
+        "img": "images/node-interface/cottage-preview.jpg",
+        "video": null,
+        "color": "black"
+      },
+      "project": {
+        "img": null,
+        "description": null,
+        "githubLink": null,
+        "sessionLink": null
+      }
+    }
+  }
+}
