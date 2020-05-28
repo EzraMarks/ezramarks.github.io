@@ -2,99 +2,60 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
   <title>Ezra Marks</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/header.css">
+
   <link rel="stylesheet" href="./styles/work.css">
 </head>
 
 <body>
-    <div class="page-container">
-      <div class="header">
-          <a href="index.html" class="logo">Ezra Marks</a>
-          <div class="header-right">
-            <a class="active" href="index.html">Work</a>
-            <a href="about.html">About</a>
-            <a href="resume.html">Resume</a>
-          </div>
-      </div>
-      <div class="blurb-container">
-        <h3>Hi! I’m Ezra, a computer science student exploring user-focused design.</h3>
-        <p><span>Studying Computer Science and Cognitive Science,</span>
-        <span>Brown University</span></p>
-      </div>
-      <div class="portfolio-container">
-        <!-- TODO: make background image / gif here and see what happens -->
-        <div class="portfolio-item"
-        id="rhythm-witch">
-          <a href="portfolio/rhythm-witch.html">
-            <div class="aspect-ratio-box">
-              <div class="hover-text">
-                <h2>Rhythm Witch</h2>
-                <h3>2D Music Game | Programming</h3>
-              </div>
-              <video class="hover-graphic"
-              autoplay muted loop>
-                <source src="images/rhythm-witch-preview.mp4"
-                type="video/mp4"/>
-              </video>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio-item"
-        id="tea-shop">
-          <a href="portfolio/tea-shop.html">
-            <div class="aspect-ratio-box">
-              <div class="hover-text">
-                <h2>The Tea Shop</h2>
-                <h3>Interactive Online Store | React Web Development</h3>
-              </div>
-              <div class="hover-graphic">
-                
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio-item"
-        id="personas-storyboarding">
-          <a href="portfolio/personas-storyboarding.html">
-            <div class="aspect-ratio-box">
-              <div class="hover-text">
-                  <h2>Dining Hall Exit Interface</h2>
-                  <h3>Identifying Target User Groups | Personas and Storyboarding</h3>
-                </div>
-                <div class="hover-graphic">
-                  
-                </div>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio-item"
-        id="node-interface">
-          <a href="portfolio/node-interface.html">
-            <div class="aspect-ratio-box">
-              <div class="hover-text">
-                <h2>Node Backyard Cottages</h2>
-                <h3>Web Design Concept | UI/UX</h3>
-              </div>
-              <div class="hover-graphic">
-                <img src="images/node-interface/cottage-preview.jpg"/>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="footer"></div>
-    </div>
-  <script type="text/javascript" src="./scripts/scroll-header.js"></script>
-  <!-- fixes Chrome bug where CSS transitions fire on page load -->
-  <script> </script>
+  <site-header></site-header>
+  <div class="blurb-container">
+    <h3>Hi! I’m Ezra, a computer science student exploring user-focused design.</h3>
+    <p><span>Studying Computer Science and Cognitive Science,</span>
+    <span>Brown University</span></p>
+  </div>
+  <div class="portfolio-container">
+    <project-preview
+      title="Rhythm Witch"
+      description="2D Music Game | Programming"
+      link="./portfolio/rhythm-witch.html"
+      thumbnail-img="./images/rhythm-witch-title.gif"
+      thumbnail-color="#A7CCED"
+      hover-video="./images/rhythm-witch-preview.mp4"
+      hover-color="black">
+    </project-preview>
+    <project-preview
+      title="The Tea Shop"
+      description="Interactive Online Store | React Web Development"
+      link="./portfolio/tea-shop.html"
+      thumbnail-img="./images/tea-shop/tea-bag.png"
+      thumbnail-color="#6290C8">
+    </project-preview>
+    <project-preview
+      title="Dining Hall Exit Interface"
+      description="Identifying Target User Groups | Personas and Storyboarding"
+      link="./portfolio/personas-storyboarding.html"
+      thumbnail-img="./images/personas-storyboarding/ratty-preview--white-filled.png"
+      thumbnail-color="#4F5D75">
+    </project-preview>
+    <project-preview
+      title="Node Backyard Cottages"
+      description="Web Design Concept | UI/UX"
+      link="./portfolio/node-interface.html"
+      thumbnail-img="./images/node-interface/node-logo.png"
+      thumbnail-color="#363333"
+      hover-img="images/node-interface/cottage-preview.jpg"
+      hover-color="black">
+    </project-preview>
+  </div>
+  
+  <script src="./web-components/siteHeader.js"></script>
+  <script src="./web-components/projectPreview.js"></script>
 </body>
 </html>

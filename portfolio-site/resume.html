@@ -2,36 +2,23 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
   <title>Ezra Marks</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/header.css">
+
   <link rel="stylesheet" href="./styles/resume.css">
 </head>
 
 <body>
-    <div class="page-container">
-      <div class="header">
-          <a href="index.html" class="logo">Ezra Marks</a>
-          <div class="header-right">
-            <a href="index.html">Work</a>
-            <a href="about.html">About</a>
-            <a class="active" href="resume.html">Resume</a>
-          </div>
-      </div>
-      <div class="resume-pdf-container">
-        <embed class="resume-pdf" src="./images/ezra-marks-resume.pdf#view=FitH"/>
-      </div>
-      <div class="footer"></div>
+  <site-header></site-header>
+    <div class="resume-pdf-container">
+      <embed class="resume-pdf" src="./images/ezra-marks-resume.pdf#view=FitH"/>
     </div>
-  <script type="text/javascript" src="./scripts/scroll-header.js"></script>
-  <!-- fixes Chrome bug where CSS transitions fire on page load -->
-  <script> </script>
+  
+  <script src="./web-components/siteHeader.js"></script>
 </body>
 </html>
