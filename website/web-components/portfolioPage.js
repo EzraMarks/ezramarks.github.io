@@ -7,7 +7,7 @@ class PortfolioPage extends HTMLElement {
         // Grabs the JSON data for this portfolio page, based on the `page`
         // attribute passed in with the HTML element.
         const page = this.getAttribute('page');
-        fetch("./portfolioPages/portfolio-descriptions.json")
+        fetch("./portfolio-pages/portfolio-descriptions.json")
             .then(response => response.json())
             .then(data => {
                 const portfolioItemDescription = data.portfolioDescriptions[page];

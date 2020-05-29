@@ -2,7 +2,7 @@
     "rhythm-witch": {
         "title": "Rhythm Witch",
         "subtitle": "2D Music Game | Programming",
-        "portfolioLink": "./portfolioPages/rhythm-witch.html",
+        "portfolioLink": "./portfolio-pages/rhythm-witch.html",
         "thumbnail": {
             "img": "./images/rhythm-witch-title.gif",
             "color": "#A7CCED"
@@ -22,7 +22,7 @@
     "tea-shop": {
         "title": "The Tea Shop",
         "subtitle": "Interactive Online Store | React Web Development",
-        "portfolioLink": "./portfolioPages/tea-shop.html",
+        "portfolioLink": "./portfolio-pages/tea-shop.html",
         "thumbnail": {
             "img": "./images/tea-shop/tea-bag.png",
             "color": "#6290C8"
@@ -42,7 +42,7 @@
     "personas-storyboarding": {
         "title": "Dining Hall Exit Interface",
         "subtitle": "Identifying Target User Groups | Personas and Storyboarding",
-        "portfolioLink": "./portfolioPages/personas-storyboarding.html",
+        "portfolioLink": "./portfolio-pages/personas-storyboarding.html",
         "thumbnail": {
             "img": "./images/personas-storyboarding/ratty-preview--white-filled.png",
             "color": "#4F5D75"
@@ -62,7 +62,7 @@
     "node-interface": {
         "title": "Node Backyard Cottages",
         "subtitle": "Web Design Concept | UI/UX",
-        "portfolioLink": "./portfolioPages/node-interface.html",
+        "portfolioLink": "./portfolio-pages/node-interface.html",
         "thumbnail": {
             "img": "./images/node-interface/node-logo.png",
             "color": "#363333"
