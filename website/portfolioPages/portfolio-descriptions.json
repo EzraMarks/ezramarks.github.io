@@ -1,8 +1,8 @@
 {"portfolioDescriptions": {
-    "rhythmWitch": {
+    "rhythm-witch": {
         "title": "Rhythm Witch",
         "subtitle": "2D Music Game | Programming",
-        "portfolioLink": "./portfolio/rhythm-witch.html",
+        "portfolioLink": "./portfolioPages/rhythm-witch.html",
         "thumbnail": {
             "img": "./images/rhythm-witch-title.gif",
             "color": "#A7CCED"
@@ -16,13 +16,13 @@
             "img": null,
             "description": null,
             "githubLink": null,
-            "sessionLink": null
+            "projectLink": "./projects/rhythm-witch/index.html"
         }
     },
-    "teaShop": {
+    "tea-shop": {
         "title": "The Tea Shop",
         "subtitle": "Interactive Online Store | React Web Development",
-        "portfolioLink": "./portfolio/tea-shop.html",
+        "portfolioLink": "./portfolioPages/tea-shop.html",
         "thumbnail": {
             "img": "./images/tea-shop/tea-bag.png",
             "color": "#6290C8"
@@ -33,16 +33,16 @@
             "color": null
         },
         "project": {
-            "img": null,
+            "img": "./images/tea-shop/tea-shop-website.jpg",
             "description": null,
             "githubLink": null,
-            "sessionLink": null
+            "projectLink": "https://pure-lake-44188.herokuapp.com"
         }
     },
-    "personasStoryboarding": {
+    "personas-storyboarding": {
         "title": "Dining Hall Exit Interface",
         "subtitle": "Identifying Target User Groups | Personas and Storyboarding",
-        "portfolioLink": "./portfolio/personas-storyboarding.html",
+        "portfolioLink": "./portfolioPages/personas-storyboarding.html",
         "thumbnail": {
             "img": "./images/personas-storyboarding/ratty-preview--white-filled.png",
             "color": "#4F5D75"
@@ -56,13 +56,13 @@
             "img": null,
             "description": null,
             "githubLink": null,
-            "sessionLink": null
+            "projectLink": null
         }
     },
-    "nodeInterface": {
+    "node-interface": {
         "title": "Node Backyard Cottages",
         "subtitle": "Web Design Concept | UI/UX",
-        "portfolioLink": "./portfolio/node-interface.html",
+        "portfolioLink": "./portfolioPages/node-interface.html",
         "thumbnail": {
             "img": "./images/node-interface/node-logo.png",
             "color": "#363333"
@@ -76,7 +76,7 @@
             "img": null,
             "description": null,
             "githubLink": null,
-            "sessionLink": null
+            "projectLink": null
         }
     }
 }}

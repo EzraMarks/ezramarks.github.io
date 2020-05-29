@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <link rel="stylesheet" href="./styles/work.css">
 </head>
@@ -24,7 +24,7 @@
         <script>
             // Renders all portfolio preview items in the `portfolio` div,
             // as defined in the `portfolio-descriptions.json` file.
-            fetch("./portfolio/portfolio-descriptions.json")
+            fetch("./portfolioPages/portfolio-descriptions.json")
                 .then(response => response.json())
                 .then(data => {
                     const portfolioDescriptions = data.portfolioDescriptions;

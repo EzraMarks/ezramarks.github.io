@@ -9,18 +9,14 @@
 
     <base href="../">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <link rel="stylesheet" href="./styles/node-interface.css">
 </head>
 
 <body>
     <site-header></site-header>
-    <div class="article-container">
-        <div class="title">
-            <h1>Node Backyard Cottages</h1>
-            <h2>Web Design Concept: UI/UX</h2>
-        </div>
+    <portfolio-page page="node-interface">
         <div class="iframe-container">
             <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fx7UCoYspsoMNZo9Z2aO7NB%2FNode-Website-Design%3Fnode-id%3D122%253A0%26scaling%3Dscale-down-width" allowfullscreen></iframe>
         </div>
@@ -63,8 +59,9 @@
         <p>During our user testing experience, we learned the importance of clarity and specificity in instructions and context. We noticed that much of our feedback focused on information that was not present on our site—legal, zoning, and hyper-specific engineering and architectural    information you’d expect to have access to when buying a home. We knew this information was not present and would have preferred feedback on the usability and visual components of the interface instead.</p>
         <p>We realized that when our users were provided with a high-fidelity prototype without much context on why it was built, they seemed to assume it was ready for launch and thus criticized it for not having enough information for a home buyer. Next time, we could make clear to users that legal and financial transactions are handled by Node on an order-to-order basis, where customers are personally contacted.</p>
         <p>Our ability to design the interface with enough interactivity for the users to complete a particularly defined task was successful. We learned that there’s a balancing act between being specific enough in instructions without telling the user exactly what to do and thus preventing them from making mistakes that we can learn from. Otherwise, we were surprised by the variance in feedback we received—one user provided 20 minutes worth of detailed, insightful feedback while the other two seemed eager to complete the task and finish the assignment as quickly as possible.</p>
-    </div>
+    </portfolio-page> 
     
     <script src="./web-components/siteHeader.js"></script>
+    <script src="./web-components/portfolioPage.js"></script>
 </body>
 </html>
