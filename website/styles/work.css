@@ -15,9 +15,18 @@
 
 .portfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     margin: -12px;
+}
+
+/* use dual-column layout for small screens */
+@media screen and (max-width:1000px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px;
+    }
 }
 
 /* use single-column layout for small screens */

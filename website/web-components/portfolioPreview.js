@@ -8,89 +8,97 @@ class PortfolioPreview extends HTMLElement {
     set description(desc) {
         this.shadowRoot.innerHTML = `
             <style>
-            /* main div for a project preview item */
-            .project-preview {
-                text-align: center;
-                border-radius: 10px;
-                margin: 12px;
-                padding: 0px;
-                background-repeat: no-repeat;
-                background-size: 80%;
-                background-position: center;
-                background-color: ${desc.thumbnail.color};
-                background-image: url("${desc.thumbnail.img}");
-            }
+                .portfolio-preview {
+                    text-align: center;
+                    margin: 12px;
+                    padding: 0px;
+                    background-repeat: no-repeat;
+                    background-size: 80%;
+                    background-position: center;
+                    background-color: ${desc.thumbnail.color};
+                    background-image: url("${desc.thumbnail.img}");
+                }
 
-            /* inner link container which resides in each div,
-            * so the link will take up the entire div, excluding the margin/padding */
-            .link {
-                opacity: 0;
-                display: block;
-                width: 100%;
-                height: 100%;
-                color: white;
-                text-decoration: none;
-                position: relative;
-                overflow: hidden;
-                border-radius: inherit;
-                transition-property: opacity;
-                transition-duration: 0.2s;
-                background-color: ${desc.thumbnailHover.color || desc.thumbnail.color}
-            }
+                .image-btn {
+                    border-radius: 5px;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+                }
+                  
+                .image-btn:hover {
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                }
 
-            /* on hover, show the contents of the container */
-            .link:hover {
-                opacity: 1;
-                transition-property: opacity;
-                transition-duration: 0.3s;
-            }
+                .container {
+                    opacity: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+                    text-decoration: none;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: inherit;
+                    transition-property: opacity;
+                    transition-duration: 0.2s;
+                    background-color: ${desc.thumbnail.color};
+                }
 
-            /* position & style text in the on-hover preview */
-            .hover-text {
-                position: absolute;
-                width: 80%;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 999;
-            }
+                /* Maintains a 16:9 aspect ratio on each item. */
+                .container::before {
+                    content: "";
+                    width: 1px;
+                    margin-left: -1px;
+                    float: left;
+                    height: 0;
+                    padding-top: 66.67%; /* Controls the aspect ratio. */
+                }
 
-            /* position and style the graphic in the on-hover preview */
-            .hover-graphic * {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                opacity: 0.8;
-                border-radius: inherit;
-                width: 100%;
-            }
+                .container::after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
 
-            /* maintain a 16:9 aspect ratio on each item */
-            .aspect-ratio-box::before {
-                content: "";
-                width: 1px;
-                margin-left: -1px;
-                float: left;
-                height: 0;
-                padding-top: 56.25%; /* controls the aspect ratio */
-            }
-            .aspect-ratio-box::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-        </style>
+                /* Shows content on hover */
+                .container:hover {
+                    opacity: 1;
+                    transition-property: opacity;
+                    transition-duration: 0.3s;
+                }
 
-        <div class="project-preview" title="">
-            <a class="link" href="${desc.portfolioLink}">
-                <div class="aspect-ratio-box">
+                .hover-text {
+                    position: absolute;
+                    width: 80%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 999;
+                }
+                
+                .hover-graphic * {
+                    filter: brightness(0.75);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: inherit;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            </style>
+
+            <div class="portfolio-preview image-btn" title="">
+                <a class="container" href="${desc.portfolioLink}">
                     <div class="hover-text">
-                        <h2 class="title">${desc.title}</h2>
-                        <h3 class="description">${desc.subtitle}</h3>
+                        <h2>${desc.title}</h2>
+                        <h3>${desc.subtitle}</h3>
                     </div>
-                    <div class="hover-graphic">
-                        ${function generateHoverGraphicHtml() {
+                    <div class="hover-graphic">${
+                        // Generates the HTML content for the on-hover graphic,
+                        // either an image or a video.
+                        function generateHoverGraphicHtml() {
                             let hoverGraphic = ``;
                             if (desc.thumbnailHover.img != null) {
                                 hoverGraphic = `<img src="${desc.thumbnailHover.img}"/>`
@@ -103,11 +111,10 @@ class PortfolioPreview extends HTMLElement {
                                     `;
                             }
                             return hoverGraphic;
-                        }()}
-                    </div>
-                </div>
-            </a>
-        </div>
+                        }()
+                    }</div>
+                </a>
+            </div>
         `;
     }
 }

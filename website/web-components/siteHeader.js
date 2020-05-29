@@ -1,23 +1,23 @@
 const siteHeaderTemplate = document.createElement('template');
 siteHeaderTemplate.innerHTML = `
     <style>
-        /* Style the header with a grey background and some padding */
         .header {
             padding-top: 9px;
             padding-bottom: 1px;
             background-color: white;
             position: fixed;
-            top: 0; /* Position the navbar at the top of the page */
+            top: 0;
             width: inherit;
             max-width: inherit;
-            z-index: 9999999999;
+            z-index: 99999;
             box-shadow: -200px 0px 0px 0px white, 200px 0px 0px 0px white;
         }
         
-        .header:after{ /* define header shadow */
+        /* Creates header shadow. */
+        .header:after {
             content: "";
             position: absolute;
-            z-index: 9999999998;
+            z-index: 99998;
             top: 100%;
             bottom: 0;
             width: 120%;
@@ -29,12 +29,12 @@ siteHeaderTemplate.innerHTML = `
             transition-duration: 0.2s;
         }
         
-        .header-shadow.header:after{ /* fade in header shadow */
+        /* Fades in header shadow */
+        .header-shadow.header:after{
             opacity: 1;
             transition-duration: 0.3s;
         }
         
-        /* Style the header links */
         .header a {
             float: left;
             color: rgb(165, 165, 165);
@@ -46,35 +46,33 @@ siteHeaderTemplate.innerHTML = `
             transition-property: color;
             transition-duration: 0.15s;
         }
-        
-        /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-        .header a.logo {
-            font-size: 1.5em;
-            color: inherit;
-            margin-left: 0px;
-        }
-        
-        /* Change the background color on mouse-over */
+
         .header a:hover {
             color: inherit;
             transition-property: color;
             transition-duration: 0.15s;
         }
         
-        /* Style the active/current link*/
-        .header a.active {
+        .header .logo {
+            font-size: 1.5em;
             color: inherit;
+            margin-left: 0px;
+            
+        }
+
+        .navbar {
+            float: right;
         }
         
-        /* Float the link section to the right */
-        .header-right {
-            float: right;
+        /* Highlights the current page in the navbar */
+        .navbar-link.active {
+            color: inherit;
         }
     </style>
 
     <div class="header">
-        <a href="index.html" class="logo">Ezra Marks</a>
-        <div class="header-right">
+        <a class="logo" href="index.html">Ezra Marks</a>
+        <div class="navbar">
             <a class="navbar-link" href="index.html">Work</a>
             <a class="navbar-link" href="about.html">About</a>
             <a class="navbar-link" href="resume.html">Resume</a>
@@ -87,9 +85,12 @@ class SiteHeader extends HTMLElement {
         super();
         document.body.appendChild(siteHeaderTemplate.content.cloneNode(true));
 
-        const activePage = this.getAttribute('active-page');
-        if (activePage != null) {
-            document.body.querySelector(`[class='navbar-link'][href='${activePage}']`).classList.add('active')
+        // Highlights the navbar link for the active page, passed in through the
+        // `page` attribute in the site-header HTML element,
+        // e.g. <site-header page="index"></site-header>
+        const page = this.getAttribute('page');
+        if (page != null) {
+            document.body.querySelector(`[class='navbar-link'][href='${page}.html']`).classList.add('active');
         }
     }
 

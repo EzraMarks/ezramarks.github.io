@@ -5,7 +5,7 @@ class PortfolioPage extends HTMLElement {
         const root = this.attachShadow({ mode: 'open' });
 
         // Grabs the JSON data for this portfolio page, based on the `page`
-        // attribute passed in with the HTML element.
+        // attribute passed in to the <portfolio-page> HTML element.
         const page = this.getAttribute('page');
         fetch("./portfolio-pages/portfolio-descriptions.json")
             .then(response => response.json())
@@ -15,7 +15,6 @@ class PortfolioPage extends HTMLElement {
             }
         );
 
-        const _this = this;
         /**
          * Creates the HTML for the portfolio-page web component, based on the
          * JSON description of the page.
@@ -24,19 +23,19 @@ class PortfolioPage extends HTMLElement {
         function constructPortfolioPage(desc) {
             root.innerHTML = `
                 <style>
-                    .article-container {
+                    .page-container {
                         width: 850px;
                         max-width: 100%;
                         margin: 0 auto;
                     }
     
-                    .article-container .title {
+                    .title {
                         padding-top: 0;
                         padding-bottom: 50px;
                     }
     
-                    /* remove margin from top of title */
-                    .article-container .title h1:first-of-type {
+                    /* Removes margin from top of title. */
+                    .title h1:first-of-type {
                         margin-top: 0px;
                     }
 
@@ -48,41 +47,64 @@ class PortfolioPage extends HTMLElement {
                         width: 100%;
                     }
     
-                    .image-button {
-                        border: 4px solid #18C38F;
-                        transition-duration: 0.1s;
+                    .image-btn {
+                        border-radius: 5px;
+                        margin-bottom: 30px;
+
+                        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
                     }
-                    
-                    .image-button:hover {
-                        transition-duration: 0.2s;
-                        box-shadow: 0px 0px 8px 8px rgb(190, 190, 190);
+                      
+                    .image-btn:hover {
+                        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
                     }
     
-                    .button {
-                        background-color: #1c87c9;
-                        border: none;
-                        color: white;
-                        padding: 20px 34px;
-                        text-align: center;
+                    .btn {
+                        color: #fff;
+                        font-weight: bold;
+                        background-color: ${desc.accentColor};
+                        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+                        border-radius: 2px;
+                        padding: 12px 16px;
                         text-decoration: none;
-                        display: inline-block;
-                        font-size: 20px;
-                        margin: 4px 2px;
                         cursor: pointer;
+                        display: inline-block;
+                        -webkit-tap-highlight-color: transparent;
+                        transition: .3s ease-out;
+
+                        margin: 0px 20px 0px 0px;
+                    }
+
+                    .btn:hover {
+                        color: #fff;
+                        background-color: ${desc.accentColor}d0;
+                        transition: .3s ease-out;
+                        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+                    }
+
+                    .buttons-container {
+                        margin-bottom: 60px;
+                    }
+
                 </style>
     
-                <div class="article-container">
+                <div class="page-container">
                     <div class="title">
                         <h1>${desc.title}</h1>
                         <h2>${desc.subtitle}</h2>
                     </div>
     
-                    <a href="${desc.project.projectLink}" target="_blank">
-                        <img class="image-button" src="${desc.project.img}" alt="screenshot of ${desc.title}"/>
+                    <a ${(desc.project.img != null) ? `href="${desc.project.projectLink}"` : `style="display: none;"`}
+                        target="_blank">
+                        <img class="image-btn" src="${desc.project.img}" alt="screenshot of ${desc.title}"/>
                     </a>
                     
-                    <a href="${desc.project.projectLink}" target="_blank" class="button">PROJECT</a>
-                    <a href="${desc.project.githubLink}" target="_blank" class="button">GITHUB</a>
+                    <div class="buttons-container">
+                        <a ${(desc.project.projectLink != null) ? `href="${desc.project.projectLink}"` : `style="display: none;"`}
+                            target="_blank" class="btn">Launch Project</a>
+                        <a ${(desc.project.githubLink != null) ? `href="${desc.project.gitHub}"` : `style="display: none;"`}
+                            target="_blank" class="btn">View on GitHub</a>
+                    </div>
                     
                     <p>${desc.project.description || ""}</p>
 
