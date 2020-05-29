@@ -1,0 +1,82 @@
+{"portfolioDescriptions": {
+    "rhythm-witch": {
+        "title": "Rhythm Witch",
+        "subtitle": "2D Music Game | Programming",
+        "portfolioLink": "./portfolio-pages/rhythm-witch.html",
+        "accentColor": "#150f33",
+        "thumbnail": {
+            "img": "./images/rhythm-witch/rhythm-witch-title.gif",
+            "color": "#A7CCED"
+        },
+        "thumbnailHover": {
+            "img": null,
+            "video": "./images/rhythm-witch/rhythm-witch-preview.mp4"
+        },
+        "project": {
+            "img": "./images/rhythm-witch/rhythm-witch.jpg",
+            "description": null,
+            "githubLink": null,
+            "projectLink": "./projects/rhythm-witch/index.html"
+        }
+    },
+    "tea-shop": {
+        "title": "The Tea Shop",
+        "subtitle": "Interactive Online Store | React Web Development",
+        "portfolioLink": "./portfolio-pages/tea-shop.html",
+        "accentColor": "#29dea7",
+        "thumbnail": {
+            "img": "./images/tea-shop/tea-bag.png",
+            "color": "#6290C8"
+        },
+        "thumbnailHover": {
+            "img": null,
+            "video": null
+        },
+        "project": {
+            "img": "./images/tea-shop/tea-shop-website.jpg",
+            "description": null,
+            "githubLink": null,
+            "projectLink": "https://pure-lake-44188.herokuapp.com"
+        }
+    },
+    "personas-storyboarding": {
+        "title": "Dining Hall Exit Interface",
+        "subtitle": "Identifying Target User Groups | Personas and Storyboarding",
+        "portfolioLink": "./portfolio-pages/personas-storyboarding.html",
+        "accentColor": "#4f5e75",
+        "thumbnail": {
+            "img": "./images/personas-storyboarding/ratty-preview--white-filled.png",
+            "color": "#4F5D75"
+        },
+        "thumbnailHover": {
+            "img": null,
+            "video": null
+        },
+        "project": {
+            "img": null,
+            "description": null,
+            "githubLink": null,
+            "projectLink": null
+        }
+    },
+    "node-interface": {
+        "title": "Node Backyard Cottages",
+        "subtitle": "Web Design Concept | UI/UX",
+        "portfolioLink": "./portfolio-pages/node-interface.html",
+        "accentColor": "#373332",
+        "thumbnail": {
+            "img": "./images/node-interface/node-logo.png",
+            "color": "#363333"
+        },
+        "thumbnailHover": {
+            "img": "images/node-interface/cottage-preview.jpg",
+            "video": null
+        },
+        "project": {
+            "img": "./images/node-interface/node-interface.jpg",
+            "description": null,
+            "githubLink": null,
+            "projectLink": "https://www.figma.com/proto/x7UCoYspsoMNZo9Z2aO7NB/Node-Website-Design?embed_host=share&node-id=122%3A0&scaling=contain"
+        }
+    }
+}}

@@ -1,0 +1,20 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    align-content: center;
+    color: #333;
+    width: 1200px;
+    max-width: 93.5%;
+    margin: 0 auto;
+    padding-top: 148px;
+    padding-bottom: 70px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+video {
+    width: 100%;
+    border-radius: 5px;
+}

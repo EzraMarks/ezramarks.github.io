@@ -11,7 +11,7 @@
         padding-bottom: 56.25%; /* 16:9 aspect ratio */
         position: relative;
     }
-       
+         
     #unityContainer {
         border: 0;
         height: 100%;
@@ -20,4 +20,4 @@
         top: 0;
         width: 100%;
     }
-  }
+}

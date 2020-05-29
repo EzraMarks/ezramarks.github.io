@@ -1,0 +1,39 @@
+.blurb-container {
+    padding-bottom: 80px;
+}
+
+/* removes extra margin from text at top of page */
+.blurb-container h3:first-of-type {
+    margin-top: 0;
+}
+
+.blurb-container span {
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    margin: -12px;
+}
+
+/* use dual-column layout for small screens */
+@media screen and (max-width:1000px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px;
+    }
+}
+
+/* use single-column layout for small screens */
+@media screen and (max-width:768px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+}

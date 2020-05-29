@@ -2,36 +2,22 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <title>Ezra Marks</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Ezra Marks</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/header.css">
+    <base href="../">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <div class="page-container">
-      <div class="header">
-        <a href="../index.html" class="logo">Ezra Marks</a>
-        <div class="header-right">
-          <a href="../index.html">Work</a>
-          <a href="../about.html">About</a>
-          <a href="../resume.html">Resume</a>
-        </div>
-      </div>
-      <div class="article-container">
-        <div class="title">
-          <h1>Dining Hall Exit Interface</h1>
-          <h2>Identifying Target User Groups: Personas and Storyboarding</h2>
-        </div>
+    <site-header></site-header>
+    <portfolio-page page="personas-storyboarding">
         <h2>Part One: Interface</h2>
-        <img src="../images/personas-storyboarding/the-ratty-interface.png"
-          alt="line drawing of a dining hall dish return"/>
+        <img src="./images/personas-storyboarding/the-ratty-interface.png"
+            alt="line drawing of a dining hall dish return"/>
         <p><b>Figure 1:</b> After eating at the Brown dining hall known as “The Ratty,” every patron is expected to clear their own dishes from the table. The Ratty exit interface facilitates this process, sorting waste for environmentally-friendly processing and lessening employee labor by preparing the tableware for washing. Figure 1 (above) depicts the right side of the interface, which is mirrored on the left side (not shown). The assembly-line-style dish return begins with trash and recycling bins, labeled with signs depicting which items should go in which bins. Next comes the similarly-labeled compost bin, where the user is expected to deposit remaining food scraps. The final tubs are for reusable tableware; they are not labeled, but each identical tub tends to take on the category of the first item placed in it: utensils, cups, and plates/bowls.</p>
         <h2>Part Two: Observations</h2>
         <h3>Observed user #1</h3>
@@ -41,51 +27,48 @@
         <h3>Observed user #3</h3>
         <p>It is around 5 p.m. at the Ratty. One student walks over to the compost bin carrying a single small plate, clears it, dumps it in its appropriate bin and walks back over to her table. She proceeds to make two additional trips between her table and the bins, each time carrying a single item to clear, until she finally gathers her belongings, wraps a few pieces of fruit in a napkin and exits.</p>
         <h3>Observed user #4</h3>
-        <p>It is approaching the start of lunch time at the Ratty.  A student attempts to balance a precarious stack of three cups placed inside a small ceramic mug in one hand, while carrying a bowl with two utensils in it using the other. He walks towards the bins slowly, nearly making it before the stack of cups falls to the floor. Another student helps pick them off the ground.</p>
+        <p>It is approaching the start of lunch time at the Ratty.    A student attempts to balance a precarious stack of three cups placed inside a small ceramic mug in one hand, while carrying a bowl with two utensils in it using the other. He walks towards the bins slowly, nearly making it before the stack of cups falls to the floor. Another student helps pick them off the ground.</p>
         <h3>Questions</h3>
         <ol>
-          <li>Why do you go to the Ratty?</li>
-          <li>How long do you typically spend at the Ratty?</li>
-          <li>Do you enjoy eating here? Why?</li>
-          <li>What problems do you encounter after finishing a meal at the Ratty?</li>
-          <li>How do you resolve these problems?</li>
-          <li>Do you ever feel stressed or pressured while clearing your used dishes? Please elaborate.</li>
-          <li>Do you feel that you can effectively compost and recycle waste at the Ratty?</li>
+            <li>Why do you go to the Ratty?</li>
+            <li>How long do you typically spend at the Ratty?</li>
+            <li>Do you enjoy eating here? Why?</li>
+            <li>What problems do you encounter after finishing a meal at the Ratty?</li>
+            <li>How do you resolve these problems?</li>
+            <li>Do you ever feel stressed or pressured while clearing your used dishes? Please elaborate.</li>
+            <li>Do you feel that you can effectively compost and recycle waste at the Ratty?</li>
         </ol>
         <h3>Summary of Interviewed User #1</h3>
         <p>According to Sam, the stress of his upper-level classes and internship applications prevent him from slowing down for tasks like clearing dishes. Sam’s problems with the Ratty’s exit interface are two-fold: first, Sam believes the interface is inefficient, and the order of putting cups away before plates and silverware slows him down, lends itself to clumsy trip-ups and isn't conducive to his goal of putting away his dishes as quickly as possible. Second, Sam is a bit skeptical of the interface’s mechanism to recycle and compost waste, citing confusing and misleading diagrams and instructions on how and what should be recycled, composted or thrown out.</p>
         <h3>Summary of Interviewed User #2</h3>
         <p>When asked about her frustrations over exiting the Ratty, Beatriz cites that during peak meal times, it often gets too crowded near the bins. She strategically plans out how she will dispose her items beforehand, so that she can avoid having to turn back around and risk crashing into others. She comments that the Ratty does the best job of encouraging composting habits more than other dining halls, but mostly because the bulk of Ratty waste is compostable to begin with.</p>
         <h3>Our Population Sample</h3>
-        <p>We believe our sample was an overall good representation of the range of people who may encounter this interface. We conducted exit interviews with students of various class years and concentrations at different times of day, just after finishing eating a meal at the Ratty.  Unfortunately, we did not encounter any Ratty patrons who were using the exit interface for the first time, which would have provided a fresh perspective. Compared to north campus dining halls such as the Vdub or Andrews, which are located in areas with a higher concentration of underclassmen, the centrally-located Ratty attracts a greater variety of class years, most of whom are seeking to eat quickly, either right before or after a nearby class on the Main Green.</p>
+        <p>We believe our sample was an overall good representation of the range of people who may encounter this interface. We conducted exit interviews with students of various class years and concentrations at different times of day, just after finishing eating a meal at the Ratty.    Unfortunately, we did not encounter any Ratty patrons who were using the exit interface for the first time, which would have provided a fresh perspective. Compared to north campus dining halls such as the Vdub or Andrews, which are located in areas with a higher concentration of underclassmen, the centrally-located Ratty attracts a greater variety of class years, most of whom are seeking to eat quickly, either right before or after a nearby class on the Main Green.</p>
         <h2>Part Three: Personas</h2>
         <h3>Mental Models</h3>
         <ol>
-          <li>My plates, silverware, and cups are put in separate bins, but it does not matter because they all end up in the same dishwasher. I just put my dishes away and leave as quickly as possible. I recycle/throw-out/compost my waste at the Ratty, but sometimes, I skimp. I don’t think my individual actions make any difference, because there’s no way to create a sense of personal responsibility—the recyclable and compostable items will get sorted correctly by someone or something else eventually.</li>
-          <li>When I put away my dishes, I try to make sure I am placing everything in their correct bin so as to not inconvenience Ratty employees later on when the dishes are being cleaned. I recycle/throw-out/compost my waste at the Ratty since it is easy for me to do, as there are not many recyclable or trashable items to sort through there, anyways. Also, I think it is up to each individual to ensure that their waste is going to the right place, because there is no one else who is going to do that for them once their waste is disposed of.</li>
+            <li>My plates, silverware, and cups are put in separate bins, but it does not matter because they all end up in the same dishwasher. I just put my dishes away and leave as quickly as possible. I recycle/throw-out/compost my waste at the Ratty, but sometimes, I skimp. I don’t think my individual actions make any difference, because there’s no way to create a sense of personal responsibility—the recyclable and compostable items will get sorted correctly by someone or something else eventually.</li>
+            <li>When I put away my dishes, I try to make sure I am placing everything in their correct bin so as to not inconvenience Ratty employees later on when the dishes are being cleaned. I recycle/throw-out/compost my waste at the Ratty since it is easy for me to do, as there are not many recyclable or trashable items to sort through there, anyways. Also, I think it is up to each individual to ensure that their waste is going to the right place, because there is no one else who is going to do that for them once their waste is disposed of.</li>
         </ol>
         <h3>Persona #1: Cynical Sam</h3>
-        <img src="../images/personas-storyboarding/cynical-sam.png"
-                alt="four-quadrant chart describing a customer persona"/>
+        <img src="./images/personas-storyboarding/cynical-sam.png" alt="four-quadrant chart describing a customer persona"/>
         <p><b>Figure 2:</b> Cynical Sam is is a rushed, slightly anxious, must-optimize-everything Applied Mathematics-Economics concentrator and junior at Brown University. Sam has eaten one of his two- three daily meals at the Ratty. It is peak-time at lunch, and he is running late to his next class.</p>
         <h3>Persona #2: Busy Beatriz</h3>
-        <img src="../images/personas-storyboarding/busy-beatriz.png"
-          alt="four-quadrant chart describing a customer persona"/>
+        <img src="./images/personas-storyboarding/busy-beatriz.png"
+            alt="four-quadrant chart describing a customer persona"/>
         <p><b>Figure 3:</b> Busy Beatriz is a health-conscious and focused full-time student on meal plan. She is patient, detail-oriented and likes doing things right. On Tuesdays, she has no choice but to eat her lunch at around noon, one of the peak-times at the Ratty.</p>
         <h3>Persona #3: Healthy Hannah (Target User Group)</h3>
-        <img src="../images/personas-storyboarding/healthy-hannah.png"
-          alt="four-quadrant chart describing a customer persona"/>
+        <img src="./images/personas-storyboarding/healthy-hannah.png"
+            alt="four-quadrant chart describing a customer persona"/>
         <p><b>Figure 4:</b> Healthy Hannah is a college student who cares about healthy-eating and strives to balance her hectic schedule between schoolwork, her social life, and extracurriculars. She tries to use mealtime to properly nourish herself and reflect on how well she incorporates self-care into her routine.</p>
-        <p>A designer working for a trendy new social media company can create feeds that exploit  health-conscious, college-aged users’ hyper awareness of nutrition and exercise, broadcasting advertisements and content that could potentially harm these users’ self-image. They may do this by glamorizing fitness models, stressing the need for certain products and practices to ensure healthy living, and delegitimizing the different conceptions of what it means to be ‘healthy,’ while promoting one overarching type. Alternatively, the designer could use the platform to filter out any subliminal messages that contradict self-love and self-care in the name of health.</p>
+        <p>A designer working for a trendy new social media company can create feeds that exploit    health-conscious, college-aged users’ hyper awareness of nutrition and exercise, broadcasting advertisements and content that could potentially harm these users’ self-image. They may do this by glamorizing fitness models, stressing the need for certain products and practices to ensure healthy living, and delegitimizing the different conceptions of what it means to be ‘healthy,’ while promoting one overarching type. Alternatively, the designer could use the platform to filter out any subliminal messages that contradict self-love and self-care in the name of health.</p>
         <h2>Part Four: Storyboard (Cynical Sam)</h2>
-        <img src="../images/personas-storyboarding/ratty-storyboard.jpg"
-          alt="eight-panel storyboard showing cynical sam's journey through the ratty exit interface"/>
+        <img src="./images/personas-storyboarding/ratty-storyboard.jpg"
+            alt="eight-panel storyboard showing cynical sam's journey through the ratty exit interface"/>
         <p><b>Figure 5:</b> Cynical Sam is anxious about his busy schedule. His goal is to put away his dishes quickly and get to his next appointment; he often checks the time for fear of being late. Sam doesn’t think his individual actions matter, so it doesn’t phase him to incorrectly put his paper cup in the compost or cap off a stack of plates with his non-stackable bowl. He puts some effort into sorting his dishware to avoid social judgement, but he prioritizes his own time and doesn’t worry about smaller courtesies like sanitizing his hands or holding the door.</p>
-      </div>
-      <div class="footer"></div>
-    </div>
-  <script type="text/javascript" src="../scripts/scroll-header.js"></script>
-  <!-- fixes Chrome bug where CSS transitions fire on page load -->
-  <script> </script>
+    </portfolio-page>
+
+    <script src="./web-components/siteHeader.js"></script>
+    <script src="./web-components/portfolioPage.js"></script>
 </body>
 </html>
