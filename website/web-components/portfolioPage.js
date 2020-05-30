@@ -22,6 +22,7 @@ class PortfolioPage extends HTMLElement {
          */
         function constructPortfolioPage(desc) {
             root.innerHTML = `
+                <link rel="stylesheet" href="./styles/style.css">
                 <style>
                     .page-container {
                         width: 850px;
@@ -38,54 +39,23 @@ class PortfolioPage extends HTMLElement {
                     .title h1:first-of-type {
                         margin-top: 0px;
                     }
-
-                    img {
-                        width: 100%;
-                    }
-                    
-                    video {
-                        width: 100%;
-                    }
     
                     .image-btn {
-                        border-radius: 5px;
                         margin-bottom: 30px;
-
-                        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                    }
-                      
-                    .image-btn:hover {
-                        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
                     }
     
                     .btn {
-                        color: #fff;
-                        font-weight: bold;
                         background-color: ${desc.accentColorHex};
-                        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
-                        border-radius: 2px;
-                        padding: 12px 16px;
-                        text-decoration: none;
-                        cursor: pointer;
-                        display: inline-block;
-                        -webkit-tap-highlight-color: transparent;
-                        transition: .3s ease-out;
-
-                        margin: 0px 20px 0px 0px;
+                        margin-right: 20px;
                     }
 
                     .btn:hover {
-                        color: #fff;
                         background-color: ${desc.accentColorHex}d0;
-                        transition: .3s ease-out;
-                        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
                     }
 
                     .buttons-container {
                         margin-bottom: 60px;
                     }
-
                 </style>
     
                 <div class="page-container">

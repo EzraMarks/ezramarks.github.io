@@ -7,6 +7,7 @@ class PortfolioPreview extends HTMLElement {
 
     set description(desc) {
         this.shadowRoot.innerHTML = `
+            <link rel="stylesheet" href="./styles/style.css">
             <style>
                 .portfolio-preview {
                     text-align: center;
@@ -17,16 +18,6 @@ class PortfolioPreview extends HTMLElement {
                     background-position: center;
                     background-color: ${desc.thumbnail.colorHex};
                     background-image: url("${desc.thumbnail.img}");
-                }
-
-                .image-btn {
-                    border-radius: 5px;
-                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                }
-                  
-                .image-btn:hover {
-                    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
                 }
 
                 .container {

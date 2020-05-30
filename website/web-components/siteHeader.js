@@ -60,12 +60,12 @@ siteHeaderTemplate.innerHTML = `
             
         }
 
-        .navbar {
+        .header .navbar {
             float: right;
         }
         
         /* Highlights the current page in the navbar */
-        .navbar-link.active {
+        .header .navbar-link.active {
             color: inherit;
         }
     </style>
