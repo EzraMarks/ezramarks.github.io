@@ -7,7 +7,7 @@ class PortfolioPage extends HTMLElement {
         // Grabs the JSON data for this portfolio page, based on the `page`
         // attribute passed in to the <portfolio-page> HTML element.
         const page = this.getAttribute('page');
-        fetch("./portfolio-pages/portfolio-descriptions.json")
+        fetch("./portfolio-descriptions.json")
             .then(response => response.json())
             .then(data => {
                 const portfolioItemDescription = data.portfolioDescriptions[page];
@@ -62,7 +62,7 @@ class PortfolioPage extends HTMLElement {
                     .btn {
                         color: #fff;
                         font-weight: bold;
-                        background-color: ${desc.accentColor};
+                        background-color: ${desc.accentColorHex};
                         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
                         border-radius: 2px;
                         padding: 12px 16px;
@@ -77,7 +77,7 @@ class PortfolioPage extends HTMLElement {
 
                     .btn:hover {
                         color: #fff;
-                        background-color: ${desc.accentColor}d0;
+                        background-color: ${desc.accentColorHex}d0;
                         transition: .3s ease-out;
                         box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
                     }
@@ -91,7 +91,7 @@ class PortfolioPage extends HTMLElement {
                 <div class="page-container">
                     <div class="title">
                         <h1>${desc.title}</h1>
-                        <h2>${desc.subtitle}</h2>
+                        <h2>${desc.subtitle || ""}</h2>
                     </div>
     
                     <a ${(desc.project.img != null) ? `href="${desc.project.projectLink}"` : `style="display: none;"`}
@@ -102,7 +102,7 @@ class PortfolioPage extends HTMLElement {
                     <div class="buttons-container">
                         <a ${(desc.project.projectLink != null) ? `href="${desc.project.projectLink}"` : `style="display: none;"`}
                             target="_blank" class="btn">Launch Project</a>
-                        <a ${(desc.project.githubLink != null) ? `href="${desc.project.gitHub}"` : `style="display: none;"`}
+                        <a ${(desc.project.githubLink != null) ? `href="${desc.project.githubLink}"` : `style="display: none;"`}
                             target="_blank" class="btn">View on GitHub</a>
                     </div>
                     

@@ -13,9 +13,9 @@ class PortfolioPreview extends HTMLElement {
                     margin: 12px;
                     padding: 0px;
                     background-repeat: no-repeat;
-                    background-size: 80%;
+                    background-size: ${desc.thumbnail.imgSize || "100%"};
                     background-position: center;
-                    background-color: ${desc.thumbnail.color};
+                    background-color: ${desc.thumbnail.colorHex};
                     background-image: url("${desc.thumbnail.img}");
                 }
 
@@ -41,7 +41,7 @@ class PortfolioPreview extends HTMLElement {
                     border-radius: inherit;
                     transition-property: opacity;
                     transition-duration: 0.2s;
-                    background-color: ${desc.thumbnail.color};
+                    background-color: ${desc.thumbnail.colorHex};
                 }
 
                 /* Maintains a 16:9 aspect ratio on each item. */
@@ -93,7 +93,7 @@ class PortfolioPreview extends HTMLElement {
                 <a class="container" href="${desc.portfolioLink}">
                     <div class="hover-text">
                         <h2>${desc.title}</h2>
-                        <h3>${desc.subtitle}</h3>
+                        <h3>${desc.subtitle || ""}</h3>
                     </div>
                     <div class="hover-graphic">${
                         // Generates the HTML content for the on-hover graphic,
