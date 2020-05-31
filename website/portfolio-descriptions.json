@@ -17,7 +17,7 @@
             "img": "./images/rhythm-witch/rhythm-witch.jpg",
             "description": null,
             "githubLink": null,
-            "projectLink": "./projects/rhythm-witch/index.html"
+            "projectLink": "./projects/rhythm-witch"
         }
     },
     "fractal-forest": {
@@ -38,7 +38,7 @@
             "img": "./images/fractal-forest.jpg",
             "description": null,
             "githubLink": "https://github.com/EzraMarks/fractal-forest",
-            "projectLink": "./projects/fractal-forest/index.html"
+            "projectLink": "./projects/fractal-forest"
         }
     },
     "tea-shop": {

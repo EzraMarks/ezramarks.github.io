@@ -71,11 +71,11 @@ siteHeaderTemplate.innerHTML = `
     </style>
 
     <div class="header">
-        <a class="logo" href="index.html">Ezra Marks</a>
+        <a class="logo" href="./">Ezra Marks</a>
         <div class="navbar">
-            <a class="navbar-link" href="index.html">Work</a>
-            <a class="navbar-link" href="about.html">About</a>
-            <a class="navbar-link" href="resume.html">Resume</a>
+            <a class="navbar-link index" href="./">Work</a>
+            <a class="navbar-link about" href="about.html">About</a>
+            <a class="navbar-link resume" href="resume.html">Resume</a>
         </div>
     </div>
 `;
@@ -90,7 +90,7 @@ class SiteHeader extends HTMLElement {
         // e.g. <site-header page="index"></site-header>
         const page = this.getAttribute('page');
         if (page != null) {
-            document.body.querySelector(`[class='navbar-link'][href='${page}.html']`).classList.add('active');
+            document.body.querySelector(`[class='navbar-link ${page}']`).classList.add('active');
         }
     }
 
