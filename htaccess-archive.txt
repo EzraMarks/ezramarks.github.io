@@ -1,0 +1,24 @@
+RewriteEngine on
+
+# If the user tries to navigate to an (ugly) URL that specifies the
+# /ezramarks/website subdirectory, this redirects them to a URL which
+# does not contain the specified subdirectory.
+RewriteCond %{HTTP_HOST} ^(www.)?ezramarks.com$
+RewriteCond %{THE_REQUEST} /ezramarks/website/([^\s]*)
+RewriteRule ^ /%1 [NC,L,R]
+
+# Allows the ezramarks.com website files to be accessed from the
+# /ezramarks/website subdirectory by adding /ezramarks/website when
+# mapping the URL to the filesystem path (invisible to user).
+RewriteCond %{HTTP_HOST} ^(www.)?ezramarks.com$
+RewriteCond %{REQUEST_URI} !^/ezramarks/website/
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /ezramarks/website/$1 [L]
+
+# Removes .html from the end of the URL that the user sees.
+RewriteCond %{HTTP_HOST} ^(www.)?ezramarks.com$
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
