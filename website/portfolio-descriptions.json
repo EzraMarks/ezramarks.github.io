@@ -1,7 +1,7 @@
 {"portfolioDescriptions": {
     "rhythm-witch": {
         "title": "Rhythm Witch",
-        "subtitle": "2D Music Game | Programming",
+        "subtitle": "2D Music Game",
         "portfolioLink": "./portfolio-pages/rhythm-witch.html",
         "accentColorHex": "#150f33",
         "thumbnail": {
@@ -22,7 +22,7 @@
     },
     "fractal-forest": {
         "title": "Fractal Forest",
-        "subtitle": null,
+        "subtitle": "Visual Programming with JavaScript",
         "portfolioLink": "./portfolio-pages/fractal-forest.html",
         "accentColorHex": "#000000",
         "thumbnail": {
@@ -36,14 +36,14 @@
         },
         "project": {
             "img": "./images/fractal-forest.jpg",
-            "description": null,
+            "description": "Creating a fractal tree was one of my earliest coding projects; its simple elegance helped inspire me to study Computer Science. Staying home in Vermont during the Covid lockdown has given me some time to revisit these beautiful, algorithmic patterns of nature, growing that basic recursive fractal tree into an object-oriented Fractal Forest. This project was built in JavaScript with the help of the p5.js graphics library, created by the wonderful community behind the open-source <a href='https://processing.org/'>Processing</a> software.",
             "githubLink": "https://github.com/EzraMarks/fractal-forest",
             "projectLink": "./projects/fractal-forest"
         }
     },
     "tea-shop": {
         "title": "The Tea Shop",
-        "subtitle": "Interactive Online Store | React Web Development",
+        "subtitle": "Interactive Online Store with React.js",
         "portfolioLink": "./portfolio-pages/tea-shop.html",
         "accentColorHex": "#29dea7",
         "thumbnail": {
@@ -64,7 +64,7 @@
     },
     "personas-storyboarding": {
         "title": "Dining Hall Exit Interface",
-        "subtitle": "Identifying Target User Groups | Personas and Storyboarding",
+        "subtitle": "Identifying Target User Groups",
         "portfolioLink": "./portfolio-pages/personas-storyboarding.html",
         "accentColorHex": "#4f5e75",
         "thumbnail": {
@@ -85,7 +85,7 @@
     },
     "node-interface": {
         "title": "Node Backyard Cottages",
-        "subtitle": "Web Design Concept | UI/UX",
+        "subtitle": "UI/UX Web Design Concept",
         "portfolioLink": "./portfolio-pages/node-interface.html",
         "accentColorHex": "#373332",
         "thumbnail": {
