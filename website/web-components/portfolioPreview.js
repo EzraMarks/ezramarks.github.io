@@ -11,7 +11,7 @@ class PortfolioPreview extends HTMLElement {
             <style>
                 .portfolio-preview {
                     text-align: center;
-                    margin: 12px;
+                    margin: 18px;
                     padding: 0px;
                     background-repeat: no-repeat;
                     background-size: ${desc.thumbnail.imgSize || "100%"};

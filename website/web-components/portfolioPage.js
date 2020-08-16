@@ -64,7 +64,7 @@ class PortfolioPage extends HTMLElement {
                         <h2>${desc.subtitle || ""}</h2>
                     </div>
     
-                    <a ${(desc.project.img != null) ? `href="${desc.project.projectLink}"` : `style="display: none;"`}
+                    <a ${(desc.project.img != null) ? `href="${desc.project.projectLink || desc.project.githubLink}"` : `style="display: none;"`}
                         target="_blank">
                         <img class="image-btn" src="${desc.project.img}" alt="screenshot of ${desc.title}"/>
                     </a>

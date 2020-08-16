@@ -41,9 +41,29 @@
             "projectLink": "./projects/fractal-forest"
         }
     },
+    "photosensitive-epilepsy": {
+        "title": "Video Augmentation for Photosensitive Epilepsy",
+        "subtitle": "",
+        "portfolioLink": "./portfolio/photosensitive-epilepsy.html",
+        "accentColorHex": "#263240",
+        "thumbnail": {
+            "img": "./images/eye-icon.png",
+            "imgSize": "30%",
+            "colorHex": "#263240"
+        },
+        "thumbnailHover": {
+            "img": null,
+            "video": null
+        },
+        "project": {
+            "img": "./images/fractal-forest.jpg",
+            "description": "<p>Photosensitivity, formally known as photosensitive epilepsy, is a condition that results in sensitivity to certain visual patterns, particularly flashing lights. When exposed to these visual stimuli, a person with photosensitivity can experience seizures or seizure-like symptoms. The <a href='http://www.epilepsy.com/article/2014/3/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions-0'>Epilepsy Foundation</a> has identified key triggers for light-induced seizures, including, but not limited to, the frequency and intensity of flashing light.</p><p>This program detects patterns of flashing light in video and outputs an augmented video with the photosensitive-triggering light patterns removed, achieved in near real-time for standard definition video. Although video producers are the first line of defense in removing content that could trigger photosensitivity, online video platforms like YouTube currently lack the necesary regulation. This software is meant directly for the end-user, giving agency and peace of mind for video viewers with photosensitivity.</p><p>Although this program has shown promising results on augmenting dangerous flashing videos like the \"<a href='https://web.archive.org/web/20020125093204/http://www.csicop.org/si/2001-05/pokemon.html'>Pokémon Shock</a>\" episode, the photosensitivity-trigger reduction is not all-encompassing nor is it thoroughly tested. Please use at your own risk.",
+            "githubLink": "https://github.com/EzraMarks/epilepsy-video-augmentation"
+        }
+    },
     "tea-shop": {
         "title": "The Tea Shop",
-        "subtitle": "Interactive Online Store with React.js",
+        "subtitle": "Interactive Online Store with React",
         "portfolioLink": "./portfolio/tea-shop.html",
         "accentColorHex": "#29dea7",
         "thumbnail": {
