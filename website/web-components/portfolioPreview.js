@@ -6,12 +6,12 @@ class PortfolioPreview extends HTMLElement {
     }
 
     set description(desc) {
-        this.shadowRoot.innerHTML = `
+        this.shadowRoot.innerHTML = /*html*/ `
             <link rel="stylesheet" href="./styles/style.css">
             <style>
                 .portfolio-preview {
                     text-align: center;
-                    margin: 18px;
+                    margin: 30px;
                     padding: 0px;
                     background-repeat: no-repeat;
                     background-size: ${desc.thumbnail.imgSize || "100%"};
@@ -42,7 +42,7 @@ class PortfolioPreview extends HTMLElement {
                     margin-left: -1px;
                     float: left;
                     height: 0;
-                    padding-top: 66.67%; /* Controls the aspect ratio. */
+                    padding-top: 100%; /* Controls the aspect ratio. */
                 }
 
                 .container::after {
@@ -78,9 +78,13 @@ class PortfolioPreview extends HTMLElement {
                     height: 100%;
                     object-fit: cover;
                 }
+
+                .round {
+                    border-radius: 100%;
+                }
             </style>
 
-            <div class="portfolio-preview image-btn" title="">
+            <div class="portfolio-preview image-btn round" title="">
                 <a class="container" href="${desc.portfolioLink}">
                     <div class="hover-text">
                         <h2>${desc.title}</h2>

@@ -1,5 +1,5 @@
 const siteHeaderTemplate = document.createElement('template');
-siteHeaderTemplate.innerHTML = `
+siteHeaderTemplate.innerHTML = /*html*/ `
     <style>
         .header {
             padding-top: 9px;

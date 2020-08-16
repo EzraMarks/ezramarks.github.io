@@ -21,7 +21,7 @@ class PortfolioPage extends HTMLElement {
          * @param {Object} desc 
          */
         function constructPortfolioPage(desc) {
-            root.innerHTML = `
+            root.innerHTML = /*html*/ `
                 <link rel="stylesheet" href="./styles/style.css">
                 <style>
                     .page-container {
