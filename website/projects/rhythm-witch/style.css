@@ -6,17 +6,12 @@ body {
 /* Makes unity player scale to screen size. */
 
 #unityContainer {
-    border: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    width: min(100vw, 177.777777777vh);
+    height: min(56.25vw, 100vh);
 }
 
 .webgl-content {
-    overflow: hidden;
-    padding: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    position: relative;
+    width: min(100vw, 177.777777777vh);
+    height: min(56.25vw, 100vh);
+    margin: auto;
 }
