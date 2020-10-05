@@ -22,7 +22,7 @@
     },
     "fractal-forest": {
         "title": "Fractal Forest",
-        "subtitle": "Visual Programming with JavaScript",
+        "subtitle": "Interactive Art with JavaScript",
         "portfolioLink": "./portfolio/fractal-forest.html",
         "accentColorHex": "#000000",
         "thumbnail": {
@@ -36,51 +36,9 @@
         },
         "project": {
             "img": "./images/fractal-forest.jpg",
-            "description": "Creating a fractal tree was one of my earliest coding projects; its simple elegance helped inspire me to study Computer Science. Staying home in Vermont during the Covid lockdown has given me some time to revisit these beautiful, algorithmic patterns of nature, growing that basic recursive fractal tree into an object-oriented Fractal Forest. This project was built in JavaScript with the help of the p5.js graphics library, created by the wonderful community behind the open-source <a href='https://processing.org/'>Processing</a> software.",
+            "description": "Creating a fractal tree was one of my earliest coding projects; its simple elegance helped inspire me to study Computer Science. Staying home in Vermont during the Covid lockdown has given me some time to revisit these beautiful, algorithmic patterns of nature, growing that basic recursive fractal tree into an object-oriented Fractal Forest. This project was built in JavaScript with the help of the p5.js graphics library, created by the community behind the open-source <a href='https://processing.org/'>Processing</a> software.",
             "githubLink": "https://github.com/EzraMarks/fractal-forest",
             "projectLink": "./projects/fractal-forest"
-        }
-    },
-    "tea-shop": {
-        "title": "The Tea Shop",
-        "subtitle": "Interactive Online Store with React.js",
-        "portfolioLink": "./portfolio/tea-shop.html",
-        "accentColorHex": "#29dea7",
-        "thumbnail": {
-            "img": "./images/tea-shop/tea-bag.png",
-            "imgSize": "80%",
-            "colorHex": "#6290C8"
-        },
-        "thumbnailHover": {
-            "img": null,
-            "video": null
-        },
-        "project": {
-            "img": "./images/tea-shop/tea-shop-website.jpg",
-            "description": null,
-            "githubLink": null,
-            "projectLink": "https://pure-lake-44188.herokuapp.com"
-        }
-    },
-    "personas-storyboarding": {
-        "title": "Dining Hall Exit Interface",
-        "subtitle": "Identifying Target User Groups",
-        "portfolioLink": "./portfolio/personas-storyboarding.html",
-        "accentColorHex": "#4f5e75",
-        "thumbnail": {
-            "img": "./images/personas-storyboarding/ratty-preview--white-filled.png",
-            "imgSize": "80%",
-            "colorHex": "#4F5D75"
-        },
-        "thumbnailHover": {
-            "img": null,
-            "video": null
-        },
-        "project": {
-            "img": null,
-            "description": null,
-            "githubLink": null,
-            "projectLink": null
         }
     },
     "node-interface": {
@@ -102,6 +60,27 @@
             "description": null,
             "githubLink": null,
             "projectLink": "https://www.figma.com/proto/x7UCoYspsoMNZo9Z2aO7NB/Node-Website-Design?embed_host=share&node-id=122%3A0&scaling=contain"
+        }
+    },
+    "personas-storyboarding": {
+        "title": "Dining Hall Exit Interface",
+        "subtitle": "Identifying Target User Groups",
+        "portfolioLink": "./portfolio/personas-storyboarding.html",
+        "accentColorHex": "#4f5e75",
+        "thumbnail": {
+            "img": "./images/personas-storyboarding/ratty-preview--white-filled.png",
+            "imgSize": "80%",
+            "colorHex": "#4F5D75"
+        },
+        "thumbnailHover": {
+            "img": null,
+            "video": null
+        },
+        "project": {
+            "img": null,
+            "description": null,
+            "githubLink": null,
+            "projectLink": null
         }
     }
 }}
