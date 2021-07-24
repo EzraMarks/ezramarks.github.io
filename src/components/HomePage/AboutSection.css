@@ -1,0 +1,38 @@
+.about-section {
+  margin: auto;
+  width: var(--safe-content-width);
+  display: flex;
+}
+
+.about-section .about-photo img {
+  width: 100%;
+  border-radius: var(--default-border-radius);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .about-section .about-photo {
+    flex: 1 1 0;
+    margin: 1.5em;
+  }
+
+  .about-section .about-text {
+    flex: 1 1 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section .about-photo {
+    flex: 1 1 0;
+    margin: 1.5em;
+  }
+
+  .about-section .about-text {
+    flex: 1 1 0;
+  }
+}

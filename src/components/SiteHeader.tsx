@@ -3,19 +3,22 @@ import { Link, RouteComponentProps } from "react-router-dom";
 
 interface Props extends RouteComponentProps {}
 
-export const Home: React.FC<Props> = ({ history }) => {
+export const SiteHeader: React.FC<Props> = ({ history, location, match }) => {
+  // TODO
   const button = <Link to="/resume">Go to Resume page</Link>;
   const button2 = (
     <button
       onClick={() => {
         history.push("/about");
       }}
-    ></button>
+    >
+      Go to about page
+    </button>
   );
 
   return (
     <>
-      <div>Home</div>
+      Home
       {button}
       {button2}
     </>

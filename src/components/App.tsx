@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Home } from "./Home";
-import { Resume } from "./Resume";
+import { HomePage } from "./HomePage/HomePage";
+import { ResumePage } from "./ResumePage";
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/resume" exact component={Resume} />
+        <Route path="/" exact component={HomePage} />
+        <Route path="/resume" exact component={ResumePage} />
         <Route path="/" render={() => <div>404</div>} />
       </Switch>
     </BrowserRouter>
