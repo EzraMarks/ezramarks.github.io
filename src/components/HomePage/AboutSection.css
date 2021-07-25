@@ -4,35 +4,79 @@
   display: flex;
 }
 
-.about-section .about-photo img {
-  width: 100%;
-  border-radius: var(--default-border-radius);
+.about-section {
+  /* padding-top: 100px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
-  .about-section .about-photo {
-    flex: 1 1 0;
-    margin: 1.5em;
-  }
-
-  .about-section .about-text {
-    flex: 1 1 0;
-  }
+/* removes extra margin from top of column */
+.about-text h1:first-of-type {
+  margin-top: 0;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+.about-photo {
+  padding-right: 18%;
+}
+
+/* Mobile: single-column */
+@media screen and (max-width: 768px) {
   .about-section {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .about-section .about-photo {
-    flex: 1 1 0;
-    margin: 1.5em;
+  .about-text {
+    padding: 0px;
+    padding-bottom: 60px;
   }
 
-  .about-section .about-text {
-    flex: 1 1 0;
+  .about-photo {
+    padding: 5%;
   }
+}
+
+.social-icons {
+  float: right;
+}
+
+.social-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+  margin-right: 18px;
+  margin-left: 4px;
+  transition-duration: 0.2s;
+}
+
+#linkedin-icon {
+  background-image: url(../../assets/icons/linkedin-icon-grey.png);
+}
+#linkedin-icon:hover {
+  background-image: url(../../assets/icons/linkedin-icon-color.png);
+}
+
+#github-icon {
+  background-image: url(../../assets/icons/github-icon-grey.png);
+}
+#github-icon:hover {
+  background-image: url(../../assets/icons/github-icon-color.png);
+}
+
+#instagram-icon {
+  background-image: url(../../assets/icons/instagram-icon-grey.png);
+}
+#instagram-icon:hover {
+  background-image: url(../../assets/icons/instagram-icon-color.png);
+}
+
+/* image pre-loading trick -- prevents delay to show color version on hover */
+body:after {
+  display: none;
+  content: url(../../assets/icons/linkedin-icon-color.png)
+    url(../../assets/icons/github-icon-color.png)
+    url(../../assets/icons/instagram-icon-color.png);
 }

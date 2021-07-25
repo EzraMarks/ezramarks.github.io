@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
 :root {
   --desktop-max-width: 1480px;
   --full-content-width: min(var(--desktop-max-width), 95%);
@@ -7,11 +9,47 @@
   );
 
   --default-border-radius: 4px;
+  --color-light-gray: #dedede;
+  --color-medium-gray: #727272;
+  --color-dark-gray: #333333;
+  --color-medium-blue: #3484bd;
 }
 
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+}
+
+img {
+  width: 100%;
+  border-radius: var(--default-border-radius);
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 600; /* Semibold */
+  color: var(--color-medium-gray);
+  margin: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-medium-gray);
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-dark-gray);
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-dark-gray);
+  margin: 0;
 }

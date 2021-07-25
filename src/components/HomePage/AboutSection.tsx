@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import "./AboutSection.css";
 import profilePicture from "../../assets/ezra-marks-profile-photo.jpg";
@@ -28,6 +29,29 @@ export const AboutSection: React.FC = () => {
           I would love to hear from you by email at <b>ezra_marks@brown.edu</b>,
           or visit me on the platforms below.
         </p>
+        <div className="social-icons">
+          <a
+            id="linkedin-icon"
+            className="social-icon"
+            href="https://www.linkedin.com/in/ezramarks/"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+          <a
+            id="github-icon"
+            className="social-icon"
+            href="https://github.com/EzraMarks"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+          <a
+            id="instagram-icon"
+            className="social-icon"
+            href="https://www.instagram.com/ezrablankmarks"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+        </div>
       </div>
     </div>
   );

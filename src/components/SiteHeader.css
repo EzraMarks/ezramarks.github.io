@@ -1,0 +1,38 @@
+.site-header {
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  width: var(--safe-content-width);
+}
+
+.site-title {
+  text-align: right;
+}
+
+.site-title > * {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.navbar {
+  text-align: right;
+}
+
+.navbar-link {
+  color: var(--color-medium-gray);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.15s;
+  margin-left: 2em;
+}
+
+.navbar-link:hover {
+  color: var(--color-medium-blue);
+  transition-property: color;
+  transition-duration: 0.15s;
+}
+
+/* Highlights the current page in the navbar */
+.navbar-link.active {
+  color: var(--color-medium-blue);
+}
