@@ -1,54 +1,54 @@
 .about-section {
   margin: auto;
   width: var(--safe-content-width);
-  display: flex;
-}
-
-.about-section {
-  /* padding-top: 100px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-/* removes extra margin from top of column */
-.about-text h1:first-of-type {
-  margin-top: 0;
-}
-
 .about-photo {
   padding-right: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text p,
+.about-text h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* Mobile: single-column */
 @media screen and (max-width: 768px) {
   .about-section {
-    display: grid;
     grid-template-columns: 1fr;
   }
 
-  .about-text {
-    padding: 0px;
-    padding-bottom: 60px;
-  }
-
   .about-photo {
-    padding: 5%;
+    padding: 0 10% 4rem;
   }
 }
 
 .social-icons {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.625rem;
 }
 
 .social-icon {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 32px;
-  height: 32px;
-  margin-top: 10px;
-  margin-right: 18px;
-  margin-left: 4px;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.125rem;
+  margin-left: 0.25rem;
   transition-duration: 0.2s;
 }
 
@@ -73,9 +73,13 @@
   background-image: url(../../assets/icons/instagram-icon-color.png);
 }
 
-/* image pre-loading trick -- prevents delay to show color version on hover */
-body:after {
-  display: none;
+/* Image pre-loading trick -- prevents delay to show color version on hover */
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
   content: url(../../assets/icons/linkedin-icon-color.png)
     url(../../assets/icons/github-icon-color.png)
     url(../../assets/icons/instagram-icon-color.png);

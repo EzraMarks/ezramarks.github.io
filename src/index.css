@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 :root {
-  --desktop-max-width: 1480px;
+  --desktop-max-width: 1400px;
   --full-content-width: min(var(--desktop-max-width), 95%);
-  --safe-content-width: calc(var(--full-content-width) * 0.8);
+  --safe-content-width: calc(var(--full-content-width) * 0.85);
   --safe-content-margin: calc(
     (var(--full-content-width) - var(--safe-content-width)) / 2
   );
