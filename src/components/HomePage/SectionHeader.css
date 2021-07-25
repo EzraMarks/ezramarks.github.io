@@ -1,0 +1,16 @@
+.section-header {
+  margin: auto;
+  width: var(--full-content-width);
+}
+
+.section-header .line {
+  width: auto;
+  height: 0.5rem;
+  background-color: var(--color-light-gray);
+  border-radius: 2px;
+  margin-left: calc(var(--safe-content-margin) * 0.5);
+}
+
+.section-header .title {
+  margin-left: calc(var(--safe-content-margin) * 0.6);
+}

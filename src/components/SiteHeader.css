@@ -1,7 +1,7 @@
 .site-header {
   margin: auto;
-  margin-top: 1em;
-  margin-bottom: 5em;
+  margin-top: 1rem;
+  margin-bottom: 5.5rem;
   width: var(--safe-content-width);
 }
 
@@ -23,7 +23,7 @@
   text-decoration: none;
   transition-property: color;
   transition-duration: 0.15s;
-  margin-left: 2em;
+  margin-left: 2rem;
 }
 
 .navbar-link:hover {

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 :root {
-  --desktop-max-width: 1400px;
+  --desktop-max-width: 1480px;
   --full-content-width: min(var(--desktop-max-width), 95%);
-  --safe-content-width: calc(var(--full-content-width) * 0.85);
+  --safe-content-width: calc(var(--full-content-width) * 0.8);
   --safe-content-margin: calc(
     (var(--full-content-width) - var(--safe-content-width)) / 2
   );
@@ -13,6 +13,19 @@
   --color-medium-gray: #727272;
   --color-dark-gray: #333333;
   --color-medium-blue: #3484bd;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  :root {
+    --safe-content-width: calc(var(--full-content-width) * 0.9);
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.625rem;
 }
 
 body {
