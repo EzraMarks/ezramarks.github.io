@@ -16,7 +16,7 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 768px) {
+@media (max-width: 900px) {
   :root {
     --safe-content-width: calc(var(--full-content-width) * 0.9);
   }

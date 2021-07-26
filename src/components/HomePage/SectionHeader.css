@@ -1,6 +1,7 @@
 .section-header {
   margin: auto;
   width: var(--full-content-width);
+  margin-bottom: 4em;
 }
 
 .section-header .line {
