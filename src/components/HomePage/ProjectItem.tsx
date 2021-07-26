@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../Button";
 import "./ProjectItem.css";
 
 interface Props {
@@ -14,16 +15,22 @@ export const ProjectItem: React.FC<Props> = ({ hasImageOnLeft = false }) => {
     >
       <div className="description-column">
         <div className="description">
-          <h3>Project Title</h3>
-          <h4>Project Subtitle</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non
-            rhoncus purus, id tempor nisi. Quisque eu cursus risus, eget
-            pharetra eros. Phasellus ut nibh et neque vulputate volutpat. Nam
-            purus lorem, tristique ac faucibus ut, rutrum gravida massa.
-            Suspendisse finibus at risus iaculis condimentum. Suspendisse mollis
-            nec mi sed fringilla. Duis rhoncus magna turpis.
-          </p>
+          <h3 className="description-title">Project Title</h3>
+          <h4 className="description-subtitle">Project Subtitle</h4>
+          <div className="description-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non
+              rhoncus purus, id tempor nisi. Quisque eu cursus risus, eget
+              pharetra eros. Phasellus ut nibh et neque vulputate volutpat. Nam
+              purus lorem, tristique ac faucibus ut, rutrum gravida massa.
+              Suspendisse finibus at risus iaculis condimentum. Suspendisse
+              mollis nec mi sed fringilla. Duis rhoncus magna turpis.
+            </p>
+          </div>
+          <div className="buttons-container">
+            <Button href="www.google.com">View Demo</Button>
+            <Button isHighlighted={false}>GitHub</Button>
+          </div>
         </div>
       </div>
       <div className="image-column">

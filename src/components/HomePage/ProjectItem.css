@@ -10,6 +10,14 @@
   top: 0;
 }
 
+.project-item .description-body {
+  margin-bottom: 2rem;
+}
+
+.project-item .buttons-container > * {
+  margin-right: 1rem;
+}
+
 /* Desktop */
 @media (min-width: 901px) {
   .project-item {

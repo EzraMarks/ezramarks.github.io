@@ -1,0 +1,29 @@
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 100em;
+  transition-duration: 150ms;
+
+  padding: 0.5em 1em;
+}
+
+.button {
+  box-shadow: 0px 0px 0px 1px var(--color-medium-gray) inset;
+  color: var(--color-medium-gray);
+}
+
+.button:hover {
+  box-shadow: 0px 0px 0px 2px var(--color-medium-gray) inset;
+  background-color: rgba(var(--color-medium-gray-rgb), 0.08);
+}
+
+.button.highlighted {
+  box-shadow: 0px 0px 0px 1px var(--color-medium-blue) inset;
+  color: var(--color-medium-blue);
+}
+
+.button.highlighted:hover {
+  box-shadow: 0px 0px 0px 2px var(--color-medium-blue) inset;
+  background-color: rgba(var(--color-medium-blue-rgb), 0.08);
+}
