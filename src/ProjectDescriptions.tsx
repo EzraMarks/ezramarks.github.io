@@ -29,6 +29,7 @@ export const PROJECT_DESCRIPTIONS: { [name: string]: ProjectDescription } = {
     ),
     imageSrc: rhythmWitchImg,
     demoLink: "https://brownrisdgames.itch.io/rhythmwitch",
+    githubLink: "https://github.com/EzraMarks/fractal-forest",
   },
   fractalForest: {
     title: "Fractal Forest",

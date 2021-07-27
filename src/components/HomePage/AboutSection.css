@@ -36,6 +36,7 @@
 @media (max-width: 900px) {
   .about-section {
     grid-template-columns: 1fr;
+    margin-bottom: 6rem;
   }
 
   .about-photo {

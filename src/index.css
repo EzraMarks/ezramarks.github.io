@@ -21,7 +21,8 @@
 /* Mobile */
 @media (max-width: 900px) {
   :root {
-    --safe-content-width: calc(var(--full-content-width) * 0.9);
+    --full-content-width: 93%;
+    --safe-content-width: var(--full-content-width);
   }
 }
 
