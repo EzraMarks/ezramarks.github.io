@@ -15,7 +15,7 @@
   --color-dark-gray: #333333;
   --color-medium-blue: #3484bd;
   --color-medium-blue-rgb: 52, 132, 189;
-  --color-medium-pink: #bd3484;
+  --color-dark-blue: #235980;
 }
 
 /* Mobile */
@@ -81,5 +81,5 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: var(--color-medium-pink);
+  color: var(--color-dark-blue);
 }

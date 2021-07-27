@@ -18,6 +18,11 @@
   background-color: rgba(var(--color-medium-gray-rgb), 0.08);
 }
 
+.button:active {
+  box-shadow: 0px 0px 0px 2px var(--color-dark-gray) inset;
+  color: var(--color-dark-gray);
+}
+
 .button.highlighted:any-link {
   box-shadow: 0px 0px 0px 1px var(--color-medium-blue) inset;
   color: var(--color-medium-blue);
@@ -26,4 +31,9 @@
 .button.highlighted:hover {
   box-shadow: 0px 0px 0px 2px var(--color-medium-blue) inset;
   background-color: rgba(var(--color-medium-blue-rgb), 0.08);
+}
+
+.button.highlighted:active {
+  box-shadow: 0px 0px 0px 2px var(--color-dark-blue) inset;
+  color: var(--color-dark-blue);
 }
