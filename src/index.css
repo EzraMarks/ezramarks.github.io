@@ -15,6 +15,7 @@
   --color-dark-gray: #333333;
   --color-medium-blue: #3484bd;
   --color-medium-blue-rgb: 52, 132, 189;
+  --color-medium-pink: #bd3484;
 }
 
 /* Mobile */
@@ -67,4 +68,18 @@ h4 {
   font-weight: 400;
   color: var(--color-dark-gray);
   margin: 0;
+}
+
+/* default link styling */
+a:any-link {
+  color: var(--color-medium-blue);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: var(--color-medium-pink);
 }

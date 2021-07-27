@@ -9,7 +9,7 @@
   text-align: right;
 }
 
-.site-title > * {
+.site-title a:any-link {
   text-decoration: inherit;
   color: inherit;
 }
@@ -18,7 +18,7 @@
   text-align: right;
 }
 
-.navbar-link {
+.navbar-link:any-link {
   color: var(--color-medium-gray);
   text-decoration: none;
   transition-property: color;
