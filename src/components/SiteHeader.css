@@ -36,3 +36,10 @@
 .navbar-link.active {
   color: var(--color-medium-blue);
 }
+
+/* Mobile */
+@media (max-width: 900px) {
+  .site-header {
+    margin-bottom: 4rem;
+  }
+}

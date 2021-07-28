@@ -74,7 +74,7 @@
     width: var(--safe-content-width);
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
   }
 
   .project-item .image-column {
