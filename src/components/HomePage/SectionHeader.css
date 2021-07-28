@@ -1,7 +1,7 @@
 .section-header {
   margin: auto;
   width: var(--full-content-width);
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
 
 .section-header .line {
@@ -14,4 +14,5 @@
 
 .section-header .title {
   margin-left: calc(var(--safe-content-margin) * 0.6);
+  line-height: 1em;
 }

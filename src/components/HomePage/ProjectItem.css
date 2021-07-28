@@ -33,9 +33,9 @@
     width: var(--full-content-width);
     display: flex;
     align-items: center;
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
 
-    --description-margin: 7.4rem;
+    --description-margin: 20%;
   }
 
   .project-item .description-column {
@@ -78,6 +78,6 @@
   }
 
   .project-item .image-column {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }

@@ -18,14 +18,6 @@
   --color-dark-blue: #235980;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-  :root {
-    --full-content-width: 93%;
-    --safe-content-width: var(--full-content-width);
-  }
-}
-
 .social-icons {
   display: flex;
   justify-content: flex-end;
@@ -51,7 +43,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 600;
   color: var(--color-medium-gray);
   margin: 0;
@@ -83,4 +75,28 @@ a:hover {
 /* selected link */
 a:active {
   color: var(--color-dark-blue);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  :root {
+    --full-content-width: 90%;
+    --safe-content-width: var(--full-content-width);
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
 }
