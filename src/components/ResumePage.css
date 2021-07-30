@@ -1,0 +1,21 @@
+.resume-page {
+  margin: auto;
+  width: var(--safe-content-width);
+  margin-bottom: var(--bottom-page-margin);
+}
+
+.resume-pdf-container {
+  position: relative;
+  display: block;
+  padding-top: 137%;
+}
+
+.resume-pdf {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}

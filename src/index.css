@@ -7,6 +7,7 @@
   --safe-content-margin: calc(
     (var(--full-content-width) - var(--safe-content-width)) / 2
   );
+  --bottom-page-margin: 4rem;
 
   --default-border-radius: 4px;
   --color-light-gray: #dedede;
