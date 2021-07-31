@@ -12,6 +12,19 @@ export const ProjectItem: React.FC<Props> = ({
   projectDescription,
   hasImageOnLeft = false,
 }) => {
+  let image = null;
+  if (projectDescription.videoSrc) {
+    image = (
+      <video autoPlay loop muted>
+        <source src={projectDescription.videoSrc} type="video/mp4" />
+      </video>
+    );
+  } else if (projectDescription.imageSrc) {
+    image = (
+      <img src={projectDescription.imageSrc} alt={projectDescription.title} />
+    );
+  }
+
   return (
     <div
       className={`project-item ${
@@ -41,12 +54,7 @@ export const ProjectItem: React.FC<Props> = ({
         </div>
       </div>
       <div className="image-column">
-        <div className="image">
-          <img
-            src={projectDescription.imageSrc}
-            alt={projectDescription.title}
-          />
-        </div>
+        <div className="image">{image}</div>
       </div>
     </div>
   );

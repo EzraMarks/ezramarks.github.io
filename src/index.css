@@ -31,7 +31,8 @@ body {
   color: #333;
 }
 
-img {
+img,
+video {
   width: 100%;
   border-radius: var(--default-border-radius);
 }
@@ -67,10 +68,11 @@ h4 {
 /* default link styling */
 a:any-link {
   color: var(--color-medium-blue);
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* selected link */
