@@ -13,6 +13,39 @@ export interface ProjectDescription {
 }
 
 export const PROJECT_DESCRIPTIONS: { [name: string]: ProjectDescription } = {
+  reactionDiffusion: {
+    title: "Reaction Diffusion",
+    subtitle: "Computer Graphics Simulation",
+    body: (
+      <>
+        <p>
+          Reaction-diffusion systems model physical phenomena, commonly
+          representing changes in chemical concentrations over time. This
+          graphics simulation is based on the{" "}
+          <a href="https://groups.csail.mit.edu/mac/projects/amorphous/GrayScott/">
+            Gray-Scott model
+          </a>
+          , simulating two virtual chemicals reacting and diffusing on a 2D
+          surface.
+        </p>
+        <p>
+          Built using C++ and GLSL (OpenGL Shading Language) for real-time GPU
+          rendering, the simulation is updated each frame via OpenGL
+          Framebuffers. Diffuse lighting and specular highlights are calculated
+          with a modified version of the{" "}
+          <a href="https://users.cs.northwestern.edu/~ago820/cs395/Papers/Phong_1975.pdf">
+            Phong reflection model
+          </a>
+          , using bump mapping to visualize the relative concentrations of
+          virtual chemicals in the simulation.
+        </p>
+      </>
+    ),
+    videoSrc: reactionDiffusionVideo,
+    demoLink:
+      "https://www.youtube.com/watch?v=BiV0ookFeFs&ab_channel=EzraMarks",
+    githubLink: "https://github.com/EzraMarks/reaction-diffusion",
+  },
   rhythmWitch: {
     title: "Rhythm Witch",
     subtitle: "2D Music Game",
@@ -52,38 +85,5 @@ export const PROJECT_DESCRIPTIONS: { [name: string]: ProjectDescription } = {
     ),
     imageSrc: fractalForestImg,
     githubLink: "https://github.com/EzraMarks/fractal-forest",
-  },
-  reactionDiffusion: {
-    title: "Reaction Diffusion",
-    subtitle: "Computer Graphics Simulation",
-    body: (
-      <>
-        <p>
-          Reaction-diffusion systems model physical phenomena, commonly
-          representing changes in chemical concentrations over time. This
-          graphics simulation is based on the{" "}
-          <a href="https://groups.csail.mit.edu/mac/projects/amorphous/GrayScott/">
-            Gray-Scott model
-          </a>
-          , simulating two virtual chemicals reacting and diffusing on a 2D
-          surface.
-        </p>
-        <p>
-          Built using C++ and GLSL (OpenGL Shading Language) for real-time GPU
-          rendering, the simulation is updated each frame via OpenGL
-          Framebuffers. Diffuse lighting and specular highlights are calculated
-          with a modified version of the{" "}
-          <a href="https://users.cs.northwestern.edu/~ago820/cs395/Papers/Phong_1975.pdf">
-            Phong reflection model
-          </a>
-          , using bump mapping to visualize the relative concentrations of
-          virtual chemicals in the simulation.
-        </p>
-      </>
-    ),
-    videoSrc: reactionDiffusionVideo,
-    demoLink:
-      "https://www.youtube.com/watch?v=BiV0ookFeFs&ab_channel=EzraMarks",
-    githubLink: "https://github.com/EzraMarks/reaction-diffusion",
   },
 };
