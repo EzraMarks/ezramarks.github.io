@@ -88,7 +88,7 @@ export const PROJECT_DESCRIPTIONS: { [name: string]: ProjectDescription } = {
     githubLink: "https://github.com/EzraMarks/fractal-forest",
   },
   epilepsy: {
-    title: "Strobe Block",
+    title: "Strobe Blocker",
     subtitle: "Automated Removal of Photosensitive Epilepsy Triggers in Video",
     body: (
       <>
