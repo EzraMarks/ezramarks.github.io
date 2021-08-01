@@ -1,10 +1,11 @@
 import fractalForestImg from "./assets/fractal-forest.jpg";
 import rhythmWitchImg from "./assets/rhythm-witch.jpg";
 import reactionDiffusionVideo from "./assets/reaction-diffusion.mp4";
+import pokemonShockGif from "./assets/pokemon-shock.gif";
 
 export interface ProjectDescription {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   body: React.ReactElement;
   imageSrc?: string;
   videoSrc?: string;
@@ -85,5 +86,28 @@ export const PROJECT_DESCRIPTIONS: { [name: string]: ProjectDescription } = {
     ),
     imageSrc: fractalForestImg,
     githubLink: "https://github.com/EzraMarks/fractal-forest",
+  },
+  epilepsy: {
+    title: "Photosensitivity Prevention",
+    subtitle: "Video Augmentation for Photosensitive Epilepsy",
+    body: (
+      <>
+        <p>
+          Photosensitivity, formally known as photosensitive epilepsy, is a
+          condition that results in sensitivity to certain visual patterns,
+          particularly flashing lights. When exposed to these visual stimuli, a
+          person with photosensitivity can experience seizures or seizure-like
+          symptoms.
+        </p>
+        <p>
+          This program detects patterns of flashing light in video and outputs
+          an augmented video with the photosensitive-triggering light patterns
+          removed, achieved in near real-time for standard definition video.
+          Built in Python using NumPy and OpenCV.
+        </p>
+      </>
+    ),
+    imageSrc: pokemonShockGif,
+    githubLink: "https://github.com/EzraMarks/epilepsy-video-augmentation",
   },
 };
