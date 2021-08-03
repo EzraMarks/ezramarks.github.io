@@ -13,7 +13,7 @@ export const ResumePage: React.FC<Props> = (props) => {
         <div className="resume-pdf-container">
           <iframe
             className="resume-pdf"
-            src="./ezra-marks-resume.pdf#view=FitH"
+            src="https://www.ezramarks.com/resume/ezra-marks-resume.pdf#view=FitH"
             title="Ezra Marks Resume"
           ></iframe>
         </div>

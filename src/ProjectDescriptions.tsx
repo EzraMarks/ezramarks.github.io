@@ -109,6 +109,5 @@ export const PROJECT_DESCRIPTIONS: { [name: string]: ProjectDescription } = {
     ),
     imageSrc: rhythmWitchImg,
     demoLink: "https://ezramarks.com/rhythm-witch",
-    githubLink: "https://github.com/EzraMarks/fractal-forest",
   },
 };
