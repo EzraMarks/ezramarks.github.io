@@ -68,7 +68,7 @@ export const PROJECT_DESCRIPTIONS: { [name: string]: ProjectDescription } = {
       </>
     ),
     imageSrc: pokemonShockGif,
-    githubLink: "https://github.com/EzraMarks/epilepsy-video-augmentation",
+    githubLink: "https://github.com/EzraMarks/strobe-blocker",
   },
   fractalForest: {
     title: "Fractal Forest",
