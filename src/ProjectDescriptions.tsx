@@ -97,14 +97,11 @@ export const PROJECT_DESCRIPTIONS: { [name: string]: ProjectDescription } = {
     body: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non
-          rhoncus purus, id tempor nisi. Quisque eu cursus risus, eget pharetra
-          eros. Phasellus ut nibh et neque vulputate volutpat. Nam purus lorem,
-          tristique ac faucibus ut, rutrum gravida massa. Suspendisse finibus at
-          risus iaculis condimentum. Suspendisse mollis nec mi sed fringilla.
-          Duis rhoncus magna turpis.
+          Brown-RISD Game Design Fall 2019 project. Programmed by Ezra Marks and
+          Tobias Clevinger, with sound design by JD Calvelli and art by Frank
+          Liu, Nicole Strubinski, Chris Luke, and Daniel Smith.
         </p>
-        <p>Technologies: Stuff</p>{" "}
+        <p>Technologies: C#, Unity game engine</p>
       </>
     ),
     imageSrc: rhythmWitchImg,
