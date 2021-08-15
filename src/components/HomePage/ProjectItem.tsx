@@ -40,7 +40,9 @@ export const ProjectItem: React.FC<Props> = ({
           <div className="description-body">{projectDescription.body}</div>
           <div className="buttons-container">
             {projectDescription.demoLink ? (
-              <Button href={projectDescription.demoLink}>View Demo</Button>
+              <Button href={projectDescription.demoLink}>
+                {projectDescription.demoButtonText ?? "View Demo"}
+              </Button>
             ) : null}
             {projectDescription.githubLink ? (
               <Button

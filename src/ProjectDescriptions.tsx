@@ -10,6 +10,7 @@ export interface ProjectDescription {
   imageSrc?: string;
   videoSrc?: string;
   demoLink?: string;
+  demoButtonText?: string;
   githubLink?: string;
 }
 
@@ -106,5 +107,6 @@ export const PROJECT_DESCRIPTIONS: { [name: string]: ProjectDescription } = {
     ),
     imageSrc: rhythmWitchImg,
     demoLink: "https://ezramarks.com/rhythm-witch",
+    demoButtonText: "Play Now",
   },
 };
