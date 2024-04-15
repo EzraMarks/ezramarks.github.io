@@ -2,6 +2,7 @@ import fractalForestImg from "./assets/fractal-forest.jpg";
 import rhythmWitchImg from "./assets/rhythm-witch.jpg";
 import reactionDiffusionVideo from "./assets/reaction-diffusion.mp4";
 import pokemonShockGif from "./assets/pokemon-shock.gif";
+import React from "react";
 
 export interface ProjectDescription {
   title: string;
