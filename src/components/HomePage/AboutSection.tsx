@@ -26,8 +26,8 @@ export const AboutSection: React.FC = () => {
           the world.
         </p>
         <p>
-          I would love to hear from you by email at
-          <b>ezra_marks@brown.edu</b>, or visit me on the platforms below.
+          I would love to hear from you by email at <b>ezra_marks@brown.edu</b>,
+          or visit me on the platforms below.
         </p>
         <div className="social-icons">
           <a
