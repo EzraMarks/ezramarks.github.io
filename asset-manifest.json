@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3131cafe.chunk.css",
+    "main.js": "/static/js/main.dcd07a54.chunk.js",
+    "main.js.map": "/static/js/main.dcd07a54.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.10ccea13.js",
+    "runtime~main.js.map": "/static/js/runtime~main.10ccea13.js.map",
+    "static/js/2.3e8178ab.chunk.js": "/static/js/2.3e8178ab.chunk.js",
+    "static/js/2.3e8178ab.chunk.js.map": "/static/js/2.3e8178ab.chunk.js.map",
+    "static/js/3.08d91112.chunk.js": "/static/js/3.08d91112.chunk.js",
+    "static/js/3.08d91112.chunk.js.map": "/static/js/3.08d91112.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.43b2f9df94943fe12f9fbc970b8ef035.js": "/precache-manifest.43b2f9df94943fe12f9fbc970b8ef035.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3131cafe.chunk.css.map": "/static/css/main.3131cafe.chunk.css.map",
+    "static/media/ezra-marks-profile-photo.jpg": "/static/media/ezra-marks-profile-photo.467cdf0d.jpg",
+    "static/media/fractal-forest.jpg": "/static/media/fractal-forest.69eee648.jpg",
+    "static/media/AboutSection.css": "/static/media/instagram-icon-color.47a67eca.png",
+    "static/media/pokemon-shock.gif": "/static/media/pokemon-shock.dc06af40.gif",
+    "static/media/reaction-diffusion.mp4": "/static/media/reaction-diffusion.90411f60.mp4",
+    "static/media/rhythm-witch.jpg": "/static/media/rhythm-witch.9ba95298.jpg"
+  }
+}
